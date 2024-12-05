@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Besøg radar og få en unik kulturel oplevelse">
+    <link rel="stylesheet" href="css/styles.css">
+
     <title>Radar</title>
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="" alt="" class="logo"></a>
+        <!-- <a href="../index.html"><img src="" alt="" class="logo"></a>
         <input type="checkbox" id="menu-bar">
-        <label for="menu-bar"></label>
+        <label for="menu-bar"></label> -->
         
-        <nav class="navbar">
+        <!-- <nav class="navbar">
             <ul>
                 <li><a href="#"> Events</a>
                     <ul>
@@ -63,7 +65,74 @@
                     </ul>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
     
+        <nav class="navbar">
+            <input type="checkbox" id="sidebar-active">  <!-- selve checkboxen -->
+            <label for="sidebar-active" class="open-sidebar-button"> <!-- ikonet med de tre streger, for der forbinder  -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" class="streger"/></svg>
+            </label>
+
+            <label id="overlay" for="sidebar-active"></label> <!-- den der gør at vi kommer ud af sidebaren når vi trykker et andet sted på skærmen -->
+
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button"> <!-- krydset -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" class="kryds"/></svg>        
+                </label>
+
+
+            
+                <ul class="navbar-menu">
+                <li><a href="#"> Events</a>
+                    <ul class="dropdown">    
+                        <li><a href="#">Event kalender</a>
+                        </li>
+                        <li><a href="#">Book scene</a>
+                        </li>
+                        <li><a href="#">Event arkiv</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li><a href="#">Red Radar</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Hvordan kan du redde Radar?</a>
+                        </li>
+                        <li><a href="#">Bliv frivillig</a>
+                        </li>
+                        <li><a href="#">Doner</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li><a href="#">Blog</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Artikler</a>
+                        </li>
+                        <li><a href="#">Playliste</a>
+    
+                        </li>
+                        <li><a href="#">Galleri</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li><a href="#">Information</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Kontakt</a>
+                        </li>
+                        <li><a href="#">Mission og vision</a>
+                        </li>
+                        <li><a href="#">FAQ</a>
+                        </li>
+                        <li><a href="#">Presse</a>
+                        </li>
+                        <li><a href="#">Medarbejdere</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </nav>
 </body>
 </html>
