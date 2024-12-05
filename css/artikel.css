@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:white;
+    --secundary-color:var(blue)
+    --primary-font-family:"impact";
+    --sencundary-font-family:"montserrat";
+}
+
+
+
+
+  
+
+/* webskærm */
+@media only screen and (min-width: 1100px) {
+
+    /*styling af footer*/
+.footer {
+    background-color:black; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center text horizontally */
+    padding: 2vh; /* Add some space inside the footer */
+    position: relative; /* Optional, for layout control */
+    border-top: 1px solid var(--primary-color);
+
+}
+/*styling af tekst*/
+.footer p {
+    margin: 5px 0; /* Space between footer text lines */
+    font-size: 0.9rem; /* Slightly smaller text */
+}
+
+
+/*styling af ikoner i footer*/
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white; 
+    font-size: 2vw; 
+    text-decoration: none;
+   
+}
+
+.social-icons a:hover {
+    color: var(--secundary-color); /* Highlight color on hover */
+}
+}
