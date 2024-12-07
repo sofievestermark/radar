@@ -9,7 +9,7 @@ body {
     text-decoration: none;
     background-position: center;
     text-align: center;
-    background-color: rgb(50, 104, 205);
+    background-color: #1e1e1e;
     min-width: 100vw;
     line-height: 2rem;
 }
@@ -26,7 +26,7 @@ header {
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     padding: 5px;
     display: flex;
-    flex-direction: row-reverse;
+    flex
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
@@ -40,6 +40,7 @@ header .logo{
 
 .logo{
     width: 10vw;
+    margin-top: 5%;
 
 }
 
@@ -59,7 +60,7 @@ header .navbar ul li a {
     box-sizing: border-box;
     text-decoration: none;
     font-size: 15px;
-    font-family: 'Lao Sangam MN', sans-serif;
+    font-family: 'impact';
     padding: 18px 70px;
     color: white;
     display: block;
@@ -96,10 +97,11 @@ header .navbar ul li ul li a {
     width: 100%; /* Fyld hele bredden af menuen */
     display: block;
     box-sizing: border-box;
+    font-family: 'montserrat';
 }
 
 header .navbar ul li ul li a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Lysere hover for synlighed */
+    background: blue; /* Lysere hover for synlighed */
 }
 
 /* Næste niveau af undermenu */
