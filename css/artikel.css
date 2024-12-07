@@ -6,9 +6,9 @@
 
 :root {
     --primary-color:white;
-    --secundary-color:var(blue)
-    --primary-font-family:"impact";
+    --secundary-color:var(blue);
     --sencundary-font-family:"montserrat";
+    --primary-font:"impact";
 }
 
 
@@ -18,6 +18,38 @@
 
 /* webskærm */
 @media only screen and (min-width: 1100px) {
+    body {
+        font-family:var(--sencundary-font-family);
+        text-decoration: none;
+        background-position: center;
+        text-align: center;
+        background-color: black;
+        min-width: 100vw;
+        line-height: 2rem;
+    }
+
+    /* Styling af knap */
+.cta {
+    font-size: 1vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5%;
+    padding: 2vh 3vw;
+    background-color: transparent;
+    color: white !important;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+    z-index: 1; /* Sørger for, at knappen er foran baggrunden */
+}
+
+.cta a {
+    color: white !important;
+}
+
+.cta:hover {
+    background-color: blue; /* Ændring ved hover */
+    color: white;
+}
+
 
     /*styling af footer*/
 .footer {
@@ -27,18 +59,22 @@
     padding: 2vh; /* Add some space inside the footer */
     position: relative; /* Optional, for layout control */
     border-top: 1px solid var(--primary-color);
-
 }
+
 /*styling af tekst*/
 .footer p {
     margin: 5px 0; /* Space between footer text lines */
-    font-size: 0.9rem; /* Slightly smaller text */
+    font-size: 12px;
 }
 
+.kontakt {
+    padding: 3%;
+}
 
 /*styling af ikoner i footer*/
 .social-icons {
     margin-top: 10px;
+    padding-bottom: 3%;
 }
 
 .social-icons a {
@@ -50,6 +86,6 @@
 }
 
 .social-icons a:hover {
-    color: var(--secundary-color); /* Highlight color on hover */
+    color:blue; /* Highlight color on hover */
 }
 }
