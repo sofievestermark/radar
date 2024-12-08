@@ -183,4 +183,19 @@
 .social-icons a:hover {
     color:blue; /* Highlight color on hover */
 }
+
+figure.nyhedsbrev {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #1e1e1e;
+    padding: 2% 2%;
+    color: var(--primary-color);
+}
+h3 {
+    font-family: 'montserrat';
+    font-weight: 100;
+    color: white;
+    font-size: 15px
+}
 }
