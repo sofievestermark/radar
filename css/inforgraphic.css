@@ -5,11 +5,11 @@
 }
 
 :root {
-    --primary-color:white;
+    --primary-color:var(rgba(255, 255, 255, 0.914));
     --secundary-color:var(blue);
     --tertiary-color:var(#00ed5a);
-    --sencundary-font-family:"montserrat";
-    --primary-font:"impact";
+    --quaternary-color:var(rgb(255, 128, 0));
+    --quinary-color:var(#1e1e1e);
 }
 
 
@@ -19,19 +19,20 @@
 
 /* webskærm */
 @media only screen and (min-width: 1100px) {
-    /* generel body styling */
+    /* generelt for body */
     body {
         margin-top: 4rem;
         font-family: 'montserrat';
         text-decoration: none;
-        background-color: #1e1e1e;
-        color: white;
+        background-color: var(--quinary-color);
+        color:white;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;  
         height: 100%;
         line-height: 1.5rem;
     }
+
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
         background-image: url("../img/artikel2.webp"); 
@@ -39,7 +40,7 @@
         background-position: center; 
         background-repeat: no-repeat; 
         width: auto;
-        height: 700px; 
+        height: 40rem; 
         display: flex;
         /* align-items: center;
         justify-content: center; */
@@ -62,17 +63,18 @@
     .overskrift{
         display: flex;
         text-align: flex-start;
-        padding-bottom: 20px;
-        padding-top: 10px;
+        padding-bottom: 5%;
+        padding-top: 1%;
         font-family: 'impact';
         text-transform: uppercase;
-        font-size: 70px;
-        line-height: 70px;
+        font-size: 4rem;
+        line-height: 4rem;
+        color: white; /* min primary var color vil ikke virke */
     }
 
     .eyebrow {
     color: #00ed5a;
-    font-family: var(--sencundary-font-family);
+    font-family:'montserrat';
     }
 
     /* styling af artikelns tekst */
@@ -89,7 +91,7 @@
 
     h2 {
         padding-bottom: 1%;
-        font-family: var(--primary-font);
+        font-family: 'impact';
     }
 
     .artikel p{
@@ -101,8 +103,8 @@
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    width: 1100px;
-    height: 2100px; 
+    width: 68rem;
+    height: 125rem; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,41 +114,4 @@
     margin-left: 10%;
 }
 
-        /*styling af footer*/
-.footer {
-    background-color: #1e1e1e;
-    color: white; /* White text color */
-    text-align: center; /* Center text horizontally */
-    padding: 2vh; /* Add some space inside the footer */
-    position: relative; /* Optional, for layout control */
-    border-top: 1px solid #00ed5a;
-}
-
-/*styling af tekst*/
-.footer p {
-    margin: 5px 0; /* Space between footer text lines */
-    font-size: 12px;
-}
-
-.kontakt {
-    padding: 3%;
-}
-
-/*styling af ikoner i footer*/
-.social-icons {
-    margin-top: 10px;
-    padding-bottom: 3%;
-}
-
-.social-icons a {
-    margin: 0 10px;
-    color: white; 
-    font-size: 2vw; 
-    text-decoration: none;
-   
-}
-
-.social-icons a:hover {
-    color:blue; /* Highlight color on hover */
-}
 }
