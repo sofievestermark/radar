@@ -1,0 +1,59 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /*styling af footer*/
+    .footer {
+        background-color: #1e1e1e;
+        color: white; /* White text color */
+        text-align: center; /* Center text horizontally */
+        padding: 2vh; /* Add some space inside the footer */
+        position: relative; /* Optional, for layout control */
+        border-top: 1px solid #00ed5a;
+    }
+    
+    /*styling af tekst*/
+    .footer p {
+        margin: 5px 0; /* Space between footer text lines */
+        font-size: 12px;
+    }
+    
+    .kontakt {
+        padding: 3%;
+    }
+    
+    /*styling af ikoner i footer*/
+    .social-icons {
+        margin-top: 10px;
+        padding-bottom: 3%;
+    }
+    
+    .social-icons a {
+        margin: 0 10px;
+        color: white; 
+        font-size: 2vw; 
+        text-decoration: none;
+       
+    }
+    
+    .social-icons a:hover {
+        color:blue; /* Highlight color on hover */
+    }
+    
+    figure.nyhedsbrev {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #1e1e1e;
+        padding: 2% 2%;
+        color: var(--primary-color);
+    }
+    h3 {
+        font-family: 'montserrat';
+        font-weight: 100;
+        color: white;
+        font-size: 15px
+    }

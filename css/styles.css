@@ -41,46 +41,172 @@
         height:90%;
     }
 
-    /* event billede sektion */
-    .billeder{
-        width: 110%;
-        height: 93%;
-        margin: 5%;
+    h2{
+        font-family: 'impact';
         padding-top: 7%;
+        margin: 5%;
+        font-size: 300%;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+    }
+    /* event billede sektion */
+    .billede-container {
+        position: relative; /* Make the container a positioned element */
+        display: inline-block; /* Keep it aligned with the image dimensions */
+        width: 100%;
+        overflow: hidden;
     }
     
-    .billeder:hover {
-        opacity: 0.8; 
+    .billeder {
+        display: block;
+        width: 100%;
+        height: auto;
     }
-    
-    
-    .billede-sektion a {
-        text-decoration: none; 
-        color: inherit;
-    }
-    
-    .billede-sektion a:hover h3 {
-        color: rgb(9, 100, 185); 
-    }
-    
-    
-    
-    .billede-sektion {
+
+       .billede-sektion {
         display: grid;
-        grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         padding: 20px;
-        padding-bottom: 20%;
-        max-width: 1000px; 
-        margin: 0 auto; 
+        max-width: 1000px;
+        margin: 0 auto;
+        
+    }
+
+    .billede-sektion a {
+        text-decoration: none; /* Removes underline */
+        color: white; /* Changes link color */
     }
     
     .sektion {
-        padding: 15px;
         text-align: center;
-        border: 1px; 
+        padding: 10px;
     }
 
+    h4 {
+       text-decoration: none;
+        font-family: 'impact';
+    }
+    .overlay-tekst {
+        position: absolute; /* Position relative to .billede-container */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust centering */
+        color: white; /* Text color */
+        font-family: 'impact';
+        font-size: 50px; /* Adjust size as needed */
+        font-weight: bold;
+        z-index: 10; /* Ensure text stays above the image */
+        pointer-events: none; /* Prevent text from interfering with clicks on the link */
+    }
     
+  
+    .billede-container:hover .overlay-tekst {
+        opacity: 0.8; /* Optional hover effect for text */
+    }
     
+    .billeder:hover{
+        border: 1px solid blue;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-bottom:10%;
+        padding-top: 7%;
+      }
+      
+      /* Call-to-action button */
+      .button {
+        font-family: 'impact';
+        font-size: 1.5rem; 
+        font-weight: bold; 
+        color: white; 
+        text-align: center; 
+        padding: 1rem 2rem; 
+        border: 2px solid white; 
+        background-color: transparent; 
+        cursor: pointer;
+        transition: all 0.3s ease; 
+        text-transform: uppercase; 
+        line-height: 1.5; 
+      }
+      
+      /* Hover effect */
+      .button:hover {
+        background-color: blue; 
+        }
+
+      .video-sektion {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers content horizontally */
+        justify-content: center; /* Centers content vertically if needed */
+        text-align: center; /* Ensures text is centered if any */
+    }
+    
+    .billede-video {
+        max-width: 60%; /* Ensures video is responsive */
+        height: auto; /* Maintains aspect ratio */
+    }
+
+    .artikel {
+        position: relative; /* This makes it the reference for absolute positioning */
+        display: flex;
+        align-items: center; /* Centers content vertically */
+        justify-content: center; /* Centers content horizontally */
+        text-align: center; /* Ensures text is centered if any */
+    }
+    
+    .artikel-billede {
+        width: 60%; /* Ensures image fills the container width */
+        height: 60%; /* Maintains aspect ratio */
+        padding-bottom: 7%;
+    }
+    
+    .artikel-tekst {
+        position: absolute; /* Position the text over the image */
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        color: white; /* Text color */
+        font-family: 'Impact', sans-serif;
+        font-size: 50px; /* Adjust size as needed */
+        font-weight: bold;
+        z-index: 10; /* Ensure text stays above the image */
+        pointer-events: none; /* Prevent text from interfering with clicks */
+        display: flex;
+        text-align: flex-start;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        font-family: 'impact';
+        text-transform: uppercase;
+        font-size: 70px;
+        line-height: 70px;
+    }
+    
+
+    .del {
+        width: 300px; /* Width of the box */
+  padding: 20px; /* Padding inside the box */
+  border: 2px solid #00ed5a; /* Thin green border */
+  margin: 0 auto; /* Center the box horizontally */
+  text-align: center; /* Center the text inside the box */
+  box-sizing: border-box; /* Include padding and border in the element's total width/height */
+  height: 150px; /* Optional: set a height for the box */
+  width: 900px;
+  display: flex; /* Flexbox for centering text vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+
+
+    }
+
+    .del p {
+        font-family: 'impact';
+        font-size: 150%;
+    }
 }
