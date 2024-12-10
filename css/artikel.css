@@ -144,6 +144,7 @@
   
 }
 
+/* TABLET */
 @media only screen and (max-width: 1099px) {
     /* generelt for body */
     body {
@@ -270,6 +271,7 @@
   
 }
 
+/* MOBIL */
 @media only screen and (max-width: 600px) {
     /* generelt for body */
     body {
