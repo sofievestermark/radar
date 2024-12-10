@@ -58,7 +58,7 @@ header .navbar ul li {
 header .navbar ul li a {
     box-sizing: border-box;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-family: 'impact';
     padding: 1.125rem 4.365rem;
     color: white;
@@ -147,7 +147,7 @@ display: none;
 }
 
 /*styling til tablet*/
-@media screen and (max-width: 1099px){ 
+@media screen and (max-width: 1220px){ 
 
     header {
         position: fixed;
@@ -181,7 +181,7 @@ display: none;
     
     nav{
         height: 3.75rem;
-        background-color: #1e1e1e;
+        background-color: transparent;
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
@@ -222,10 +222,12 @@ display: none;
     /* nav div label svg  */
     .streger {
         fill: white;
+        background-color: transparent;
     }
     
     nav svg .kryds {
         fill: white;
+        background-color: transparent;
     }
     
     /* fjerner checkboks */

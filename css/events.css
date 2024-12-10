@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:white;
+    --secundary-color: blue;
+    --tertiary-color:#00ed5a;
+    --quaternary-color:rgb(255, 128, 0);
+    --quinary-color:#1e1e1e;
+}
+
+/* WEBSKÆRM */
+@media only screen and (min-width: 1100px) {
+
+
+
+    /* generel body styling */
+    body {
+        margin-top: 4rem;
+        font-family: 'montserrat';
+        text-decoration: none;
+        background-color: #1e1e1e;
+        color: white;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;  
+        height: 100%;
+        line-height: 1.5rem;
+    }
+
+    /* overskrift og tekst */
+    .top {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+        text-align: center; 
+        /* height: 100vh; */
+        padding-bottom: 7%;
+        padding-top: 7%;
+        background-color: #1e1e1e; 
+        color: white; 
+    }
+    
+    .top h2 {
+        font-size: 200%; 
+        margin-bottom: 2.5%; 
+        font-family: 'Impact', sans-serif;
+        text-transform: uppercase; 
+    }
+    
+    .top p {
+        font-size: 110%; 
+        line-height: 1.5; 
+        font-family: 'Montserrat', sans-serif; 
+        max-width: 50%; 
+    }
+    
+
+        /* event billede sektion */
+        .billede-container {
+            position: relative; 
+            display: inline-block; 
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .billeder {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    
+           .billede-sektion {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+            padding: 1.25rem;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    
+        .billede-sektion a {
+            text-decoration: none; /* Removes underline */
+            color: white; /* Changes link color */
+        }
+        
+        .sektion {
+            text-align: center;
+            padding: 0.6rem;
+        }
+    
+        h4 {
+           text-decoration: none;
+            font-family: 'impact';
+            font-size: 1.5rem;
+        }
+        .overlay-tekst {
+            position: absolute; /* Position relative to .billede-container */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Adjust centering */
+            color: white; /* Text color */
+            font-family: 'impact';
+            font-size: 3rem; /* Adjust size as needed */
+            font-weight: bold;
+            z-index: 10; /* Ensure text stays above the image */
+            pointer-events: none; /* Prevent text from interfering with clicks on the link */
+        }
+        
+      
+        .billede-container:hover .overlay-tekst {
+            color:#00ed5a;
+        }
+        
+        .billeder:hover{
+            border: 1px solid blue;
+        }
+
+       
+}
+
+
+/* TABLET */
+@media screen and (max-width: 1099px) {
+   /* generel body styling */
+   body {
+    margin-top: 4rem;
+    font-family: 'montserrat';
+    text-decoration: none;
+    background-color: #1e1e1e;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    height: 100%;
+    line-height: 1.5rem;
+}
+
+/* overskrift og tekst */
+
+.top {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    /* height: 100vh; */
+    padding-bottom: 7%;
+    padding-top: 7%;
+    background-color: #1e1e1e; 
+    color: white; 
+}
+
+.top h2 {
+    font-size: 200%; 
+    margin-bottom: 2.5%; 
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase; 
+}
+
+.top p {
+    font-size: 90%; 
+    line-height: 1.5; 
+    font-family: 'Montserrat', sans-serif; 
+    max-width: 60%; 
+}
+
+    /* event billede sektion */
+    .billede-container {
+        position: relative; 
+        display: inline-block; 
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .billeder {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+       .billede-sektion {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+        padding: 1.25rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .billede-sektion a {
+        text-decoration: none; /* Removes underline */
+        color: white; /* Changes link color */
+    }
+    
+    .sektion {
+        text-align: center;
+        padding: 0.6rem;
+    }
+
+    h4 {
+       text-decoration: none;
+        font-family: 'impact';
+        font-size: 1.5rem;
+    }
+    .overlay-tekst {
+        position: absolute; /* Position relative to .billede-container */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust centering */
+        color: white; /* Text color */
+        font-family: 'impact';
+        font-size: 3rem; /* Adjust size as needed */
+        font-weight: bold;
+        z-index: 10; /* Ensure text stays above the image */
+        pointer-events: none; /* Prevent text from interfering with clicks on the link */
+    }
+    
+  
+    .billede-container:hover .overlay-tekst {
+        color:#00ed5a;
+    }
+    
+    .billeder:hover{
+        border: 1px solid blue;
+    }
+}
+
+/* MOBIL */
+@media screen and (max-width: 600px){
+       /* generel body styling */
+   body {
+    margin-top: 4rem;
+    font-family: 'montserrat';
+    text-decoration: none;
+    background-color: #1e1e1e;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    height: 100%;
+    line-height: 1.5rem;
+}
+
+/* overskrift og tekst */
+
+.top {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    /* height: 100vh; */
+    padding-bottom: 7%;
+    padding-top: 10%;
+    background-color: #1e1e1e; 
+    color: white; 
+}
+
+.top h2 {
+    font-size: 200%; 
+    margin-bottom: 2.5%; 
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase; 
+}
+
+.top p {
+    font-size: 90%; 
+    line-height: 1.5; 
+    font-family: 'Montserrat', sans-serif; 
+    max-width: 70%; 
+}
+
+
+    /* event billede sektion */
+    .billede-container {
+        position: relative; 
+        display: inline-block; 
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .billeder {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+       .billede-sektion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        padding: 1.25rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .billede-sektion a {
+        text-decoration: none; /* Removes underline */
+        color: white; /* Changes link color */
+    }
+    
+    .sektion {
+        text-align: center;
+        padding: 0.6rem;
+    }
+
+    h4 {
+       text-decoration: none;
+        font-family: 'impact';
+        font-size: 1.5rem;
+    }
+    .overlay-tekst {
+        position: absolute; /* Position relative to .billede-container */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust centering */
+        color: white; /* Text color */
+        font-family: 'impact';
+        font-size: 3rem; /* Adjust size as needed */
+        font-weight: bold;
+        z-index: 10; /* Ensure text stays above the image */
+        pointer-events: none; /* Prevent text from interfering with clicks on the link */
+    }
+    
+  
+    .billede-container:hover .overlay-tekst {
+        color:#00ed5a;
+    }
+    
+    .billeder:hover{
+        border: 1px solid blue;
+    }
+}

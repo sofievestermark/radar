@@ -5,11 +5,11 @@
 }
 
 :root {
-    --primary-color:var(rgba(255, 255, 255, 0.914));
-    --secundary-color:var(blue);
-    --tertiary-color:var(#00ed5a);
-    --quaternary-color:var(rgb(255, 128, 0));
-    --quinary-color:var(#1e1e1e);
+    --primary-color:white;
+    --secundary-color: blue;
+    --tertiary-color:#00ed5a;
+    --quaternary-color:rgb(255, 128, 0);
+    --quinary-color:#1e1e1e;
 }
 
 
@@ -19,8 +19,6 @@
 
 /* webskærm */
 @media only screen and (min-width: 1100px) {
-
-
 
     /* generel body styling */
     body {
@@ -142,70 +140,66 @@
       .video-sektion {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centers content horizontally */
-        justify-content: center; /* Centers content vertically if needed */
-        text-align: center; /* Ensures text is centered if any */
-    }
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
     
     .billede-video {
         max-width: 60%; /* Ensures video is responsive */
         height: auto; /* Maintains aspect ratio */
     }
 
-    .artikel {
-        position: relative; /* This makes it the reference for absolute positioning */
+
+    /* sektion med link til artikel */
+   .artikel {
+        background-image: url("../img/artikel1.webp"); 
+        background-size:80%; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        width: auto;
+        height: 40rem; 
         display: flex;
-        align-items: center; /* Centers content vertically */
-        justify-content: center; /* Centers content horizontally */
-        text-align: center; /* Ensures text is centered if any */
-    }
-    
-    .artikel-billede {
-        width: 60%; /* Ensures image fills the container width */
-        height: 60%; /* Maintains aspect ratio */
+        /* align-items: center;
+        justify-content: center; */
+        position: relative; 
+        margin-top: 5%;
+
+        display: flex;
+        text-align: center;
         padding-bottom: 7%;
-    }
-    
-    .artikel-tekst {
-        position: absolute; /* Position the text over the image */
-        top: 50%;
-        left: 50%; 
-        transform: translate(-50%, -50%);
-        color: white; /* Text color */
-        font-family: 'Impact', sans-serif;
-        font-size: 50px; /* Adjust size as needed */
-        font-weight: bold;
-        z-index: 10; /* Ensure text stays above the image */
-        pointer-events: none; /* Prevent text from interfering with clicks */
-        display: flex;
-        text-align: flex-start;
-        padding-bottom: 1.25rem;
-        padding-top: 0.6rem;
+        padding-top:17%;
         font-family: 'impact';
         text-transform: uppercase;
-        font-size: 4.37rem;
-        line-height: 4.75rem;
+        font-size: 4rem;
+        line-height: 4rem;
+        border:1.5px solid blue;
+    }
+
+    .artikel:hover {
+       color: blue;
     }
     
-
     .del {
         width: 18.75rem; 
-  padding: 1.25rem; 
-  border: 2px solid #00ed5a; 
-  margin: 0 auto; 
-  text-align: center; 
-  box-sizing: border-box; 
-  height: 9.375rem; 
-  width: 56rem;
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-
-
+        padding: 1.25rem; 
+        border: 2px solid #00ed5a; 
+         margin: 0 auto; 
+        text-align: center; 
+        box-sizing: border-box; 
+        height: 9.375rem; 
+        width: 56rem;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+         margin-bottom: 10%;
+        margin-top: 10%;
     }
 
     .del p {
-        font-family: 'impact';
+        font-family: 'montserrat';
         font-size: 150%;
     }
-}
+    }
+    }
