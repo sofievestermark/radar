@@ -187,14 +187,14 @@
     }
     
     .del {
-        width: 18.75rem; 
+        width: 60%; 
         padding: 1.25rem; 
         border: 2px solid #00ed5a; 
          margin: 0 auto; 
         text-align: center; 
         box-sizing: border-box; 
-        height: 9.375rem; 
-        width: 56rem;
+        /* height: 9.375rem; 
+        width: 56rem; */
         display: flex; 
         justify-content: center; 
         align-items: center;
@@ -385,14 +385,14 @@ section a {
 }
 
 .del {
-    width: 18.75rem; 
+    width: 60%; 
     padding: 1.25rem; 
     border: 2px solid #00ed5a; 
      margin: 0 auto; 
     text-align: center; 
     box-sizing: border-box; 
-    height: 9.375rem; 
-    width: 56rem;
+    /* height: 9.375rem; 
+    width: 56rem; */
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -582,14 +582,14 @@ section a {
 }
 
 .del {
-    width: 18.75rem; 
+    width: 60%; 
     padding: 1.25rem; 
     border: 2px solid #00ed5a; 
      margin: 0 auto; 
     text-align: center; 
     box-sizing: border-box; 
-    height: 9.375rem; 
-    width: 56rem;
+    /* height: 9.375rem; 
+    width: 56rem; */
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -762,12 +762,11 @@ h2.artikel {
 
     display: flex;
     text-align: center;
-    padding-bottom: 7%;
-    padding-top:17%;
+  justify-content: center;
     font-family: 'impact';
     text-transform: uppercase;
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 2rem;
+    line-height: 2rem;
     
 }
 
@@ -781,18 +780,18 @@ section a {
 }
 
 .del {
-    width: 18.75rem; 
+    width: 60%; 
     padding: 1.25rem; 
     border: 2px solid #00ed5a; 
      margin: 0 auto; 
     text-align: center; 
     box-sizing: border-box; 
-    height: 9.375rem; 
-    width: 56rem;
+    /* height: 9.375rem; 
+    width: 56rem; */
     display: flex; 
     justify-content: center; 
     align-items: center;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 5%;
      margin-bottom: 10%;
     margin-top: 10%;
@@ -800,7 +799,7 @@ section a {
 
 .del p {
     font-family: 'montserrat';
-    font-size: 150%;
+    font-size: 80%;
     font-weight: 100;
 }
 .del:hover{
