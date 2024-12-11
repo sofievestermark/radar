@@ -35,7 +35,7 @@
 
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
-        background-image: url("../img/artikel2.webp"); 
+        background-image: url("../img/redrader.webp"); 
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
@@ -51,23 +51,23 @@
     .artikel-content{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         width: 100%;
         height: auto;
         text-align: flex-start;
-        margin-bottom: 5%;
-        padding-left: 5%;
-        margin-top: 5%;
+        margin-bottom: 1%;
+        padding-left: 7%;
+        margin-top: 10%;
     }
 
     .overskrift{
         display: flex;
         text-align: flex-start;
-        padding-bottom: 5%;
-        padding-top: 1%;
+        padding-bottom: 3%;
+        padding-top: 0;
         font-family: 'impact';
         text-transform: uppercase;
-        font-size: 4rem;
+        font-size: 4.5rem;
         line-height: 4rem;
         color: white; /* min primary var color vil ikke virke */
     }
@@ -79,7 +79,7 @@
 
     /* styling af artikelns tekst */
     .artikel{
-        padding-left: 5%;
+        padding-left: 7%;
         padding-right: 15%;
         padding-top: 5%;
         padding-bottom: 10%;
@@ -103,7 +103,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-left:5%;
+    padding-left:7%;
     padding-bottom: 5%;
 }
 

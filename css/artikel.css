@@ -39,7 +39,7 @@
         background-position: center; 
         background-repeat: no-repeat; 
         width: auto;
-        height: 40rem; 
+        height: 50rem; 
         display: flex;
         /* align-items: center;
         justify-content: center; */
@@ -63,11 +63,12 @@
         display: flex;
         text-align: flex-start;
         padding-bottom: 7%;
-        padding-top:1%;
+        padding-top:0;
         font-family: 'impact';
         text-transform: uppercase;
-        font-size: 400%;
+        font-size: 450%;
         line-height: 4rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.293);  /* mild skygge for tydeliggørelse */
     }
 
     .eyebrow {

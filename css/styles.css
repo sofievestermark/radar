@@ -32,6 +32,7 @@
         background-repeat: no-repeat;  
         height: 100%;
         line-height: 1.5rem;
+        overflow-x: hidden; /* Fjern horisontal scroll */
     }
 
     video {
@@ -152,7 +153,7 @@
 
 
     /* sektion med link til artikel */
-   h2.artikel {
+   /* h2.artikel {
         background-image: url("../img/artikel1.webp"); 
         background-size:80%; 
         background-position: center; 
@@ -160,8 +161,8 @@
         width: auto;
         height: 40rem; 
         display: flex;
-        /* align-items: center;
-        justify-content: center; */
+        align-items: center;
+        justify-content: center;
         position: relative; 
         margin-top: 5%;
         color: white;
@@ -179,6 +180,35 @@
 
     section a {
         text-decoration: none;
+    } */
+
+    h2.artikel {
+        background-image: url("../img/artikel1.webp"); 
+        background-size: cover; /* Sørg for, at billedet fylder hele elementet */
+        background-position: center center; 
+        background-repeat: no-repeat; 
+        width: 80%; /* Sikrer responsiv bredde */
+        height: 40rem; /* Tilpasset højde */
+        margin: 0 auto;
+        padding-right: 0 5%;
+        display: flex;
+        align-items: center; /* Centrerer teksten vertikalt */
+        justify-content: center; /* Centrerer teksten horisontalt */
+        position: relative; 
+        margin-top: 5%;
+        color: white;
+    
+        text-align: center;
+        font-family: 'Impact', sans-serif; /* Brug 'sans-serif' som fallback */
+        text-transform: uppercase;
+        font-size: 4rem;
+        line-height: 4rem;
+        padding: 0; /* Fjern unødvendig polstring */
+    }
+    
+    /* Sikrer, at links ikke har understregning */
+    section a {
+        text-decoration: none;
     }
 
     .artikel:hover {
@@ -189,7 +219,7 @@
     .del {
         width: 60%; 
         padding: 1.25rem; 
-        border: 2px solid #00ed5a; 
+        border: 1px dashed white; 
          margin: 0 auto; 
         text-align: center; 
         box-sizing: border-box; 
@@ -210,11 +240,12 @@
         font-weight: 100;
     }
     .del:hover{
-        border: 2px solid blue; 
+        border: 1px dashed #00ed5a; 
         transform: scale(1.05);
     }
     
 }
+
 
 /* TABLET */
 @media only screen and (max-width: 1099px){
@@ -230,6 +261,7 @@
     background-repeat: no-repeat;  
     height: 100%;
     line-height: 1.5rem;
+    overflow-x: hidden; /* Fjern horisontal scroll */
 }
 
 video {
@@ -350,7 +382,7 @@ h4 {
 
 
 /* sektion med link til artikel */
-h2.artikel {
+/* h2.artikel {
     background-image: url("../img/artikel1.webp"); 
     background-size:80%; 
     background-position: center; 
@@ -358,8 +390,6 @@ h2.artikel {
     width: auto;
     height: 40rem; 
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     position: relative; 
     margin-top: 5%;
     color: white;
@@ -375,6 +405,35 @@ h2.artikel {
     
 }
 
+section a {
+    text-decoration: none;
+} */
+
+h2.artikel {
+    background-image: url("../img/artikel1.webp"); 
+    background-size: cover; /* Sørg for, at billedet fylder hele elementet */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 80%; /* Sikrer responsiv bredde */
+    height: 30rem; /* Tilpasset højde */
+    margin: 0 auto;
+    padding-right: 0 5%;
+    display: flex;
+    align-items: center; /* Centrerer teksten vertikalt */
+    justify-content: center; /* Centrerer teksten horisontalt */
+    position: relative; 
+    margin-top: 5%;
+    color: white;
+
+    text-align: center;
+    font-family: 'Impact', sans-serif; /* Brug 'sans-serif' som fallback */
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 3rem;
+    padding: 0; /* Fjern unødvendig polstring */
+}
+
+/* Sikrer, at links ikke har understregning */
 section a {
     text-decoration: none;
 }
@@ -404,7 +463,7 @@ section a {
 
 .del p {
     font-family: 'montserrat';
-    font-size: 150%;
+    font-size: 130%;
     font-weight: 100;
 }
 .del:hover{
@@ -427,6 +486,7 @@ section a {
     background-repeat: no-repeat;  
     height: 100%;
     line-height: 1.5rem;
+    overflow-x: hidden; /* Fjern horisontal scroll */
 }
 
 video {
@@ -547,7 +607,7 @@ h4 {
 
 
 /* sektion med link til artikel */
-h2.artikel {
+/* h2.artikel {
     background-image: url("../img/artikel1.webp"); 
     background-size:80%; 
     background-position: center; 
@@ -555,8 +615,8 @@ h2.artikel {
     width: auto;
     height: 40rem; 
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
     position: relative; 
     margin-top: 5%;
     color: white;
@@ -574,6 +634,37 @@ h2.artikel {
 
 section a {
     text-decoration: none;
+} */
+
+h2.artikel {
+    background-image: url("../img/artikel1.webp"); 
+    background-size: cover; /* Sørg for, at billedet fylder hele elementet */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 80%; /* Sikrer responsiv bredde */
+    height: 20rem; /* Tilpasset højde */
+    margin: 0 auto;
+    padding-right: 0 5%;
+    display: flex;
+    align-items: center; /* Centrerer teksten vertikalt */
+    justify-content: center; /* Centrerer teksten horisontalt */
+    position: relative; 
+    margin-top: 5%;
+    color: white;
+
+ 
+
+    text-align: center;
+    font-family: 'Impact', sans-serif; /* Brug 'sans-serif' som fallback */
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 0; /* Fjern unødvendig polstring */
+}
+
+/* Sikrer, at links ikke har understregning */
+section a {
+    text-decoration: none;
 }
 
 .artikel:hover {
@@ -582,8 +673,8 @@ section a {
 }
 
 .del {
-    width: 60%; 
-    padding: 1.25rem; 
+    width: 80%; 
+    padding: 1rem; 
     border: 2px solid #00ed5a; 
      margin: 0 auto; 
     text-align: center; 
@@ -601,7 +692,7 @@ section a {
 
 .del p {
     font-family: 'montserrat';
-    font-size: 150%;
+    font-size: 120%;
     font-weight: 100;
 }
 .del:hover{
@@ -626,6 +717,7 @@ section a {
     height: 100%;
     width: auto;
     line-height: 1.5rem;
+    overflow-x: hidden; /* Fjern horisontal scroll */
 }
 
 video {
@@ -748,28 +840,29 @@ h4 {
 /* sektion med link til artikel */
 h2.artikel {
     background-image: url("../img/artikel1.webp"); 
-    background-size:80%; 
+    background-size: cover; /* Sørg for, at billedet fylder hele elementet */
     background-position: center; 
     background-repeat: no-repeat; 
-    width: auto;
-    height: 40rem; 
+    width: 80%; /* Sikrer responsiv bredde */
+    height: 20rem; /* Tilpasset højde */
+    margin: 0 auto;
+    padding-right: 0 5%;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center; /* Centrerer teksten vertikalt */
+    justify-content: center; /* Centrerer teksten horisontalt */
     position: relative; 
     margin-top: 5%;
     color: white;
 
-    display: flex;
     text-align: center;
-  justify-content: center;
-    font-family: 'impact';
+    font-family: 'Impact', sans-serif; /* Brug 'sans-serif' som fallback */
     text-transform: uppercase;
     font-size: 2rem;
     line-height: 2rem;
-    
+    padding: 0; /* Fjern unødvendig polstring */
 }
 
+/* Sikrer, at links ikke har understregning */
 section a {
     text-decoration: none;
 }
@@ -780,8 +873,8 @@ section a {
 }
 
 .del {
-    width: 60%; 
-    padding: 1.25rem; 
+    width: 90%; 
+    padding: 0.75rem; 
     border: 2px solid #00ed5a; 
      margin: 0 auto; 
     text-align: center; 
@@ -793,13 +886,13 @@ section a {
     align-items: center;
     padding-top: 3%;
     padding-bottom: 5%;
-     margin-bottom: 10%;
-    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .del p {
     font-family: 'montserrat';
-    font-size: 80%;
+    font-size: 90%;
     font-weight: 100;
 }
 .del:hover{
