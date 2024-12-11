@@ -105,7 +105,7 @@
     }
     
     .billeder:hover{
-        border: 1px solid blue;
+        border: 1px solid #3cf9ff;
     }
 
     .cta {
