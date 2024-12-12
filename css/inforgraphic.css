@@ -6,9 +6,9 @@
 
 :root {
     --primary-color:white;
-    --secundary-color: blue;
+    --secundary-color: #3cf9ff;
     --tertiary-color:#00ed5a;
-    --quaternary-color:rgb(255, 128, 0);
+    --quaternary-color:#ff7436;
     --quinary-color:#1e1e1e;
 }
 
@@ -35,12 +35,12 @@
 
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
-        background-image: url("../img/redrader.webp"); 
+        background-image: url("../img/inforgraphicimg.webp");
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
         width: auto;
-        height: 40rem; 
+        height: 50rem; 
         display: flex;
         /* align-items: center;
         justify-content: center; */
@@ -51,7 +51,7 @@
     .artikel-content{
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: flex-start;
         width: 100%;
         height: auto;
         text-align: flex-start;
@@ -73,7 +73,7 @@
     }
 
     .eyebrow {
-    color: #00ed5a;
+    color: #3cf9ff;
     font-family:'montserrat';
     }
 
@@ -134,7 +134,7 @@
     transform: scale(1.05);
 }
 .graphic-overskrift:hover{
-    color: blue;
+    color: #3cf9ff;
 }
 
 }
@@ -157,7 +157,7 @@
 
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
 .overskrift-sektion{
-    background-image: url("../img/artikel2.webp"); 
+    background-image: url("../img/inforgraphicimg.webp"); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -195,7 +195,7 @@
 }
 
 .eyebrow {
-color: #00ed5a;
+color: #3cf9ff;
 font-family:'montserrat';
 }
 
@@ -257,7 +257,7 @@ line-height: normal;
 transform: scale(1.05);
 }
 .graphic-overskrift:hover{
-color: blue;
+color: #3cf9ff;
 }
 }
 
@@ -317,7 +317,7 @@ color: blue;
     }
 
     .eyebrow {
-    color: #00ed5a;
+    color:#3cf9ff;
     font-family:'montserrat';
     }
 
@@ -378,6 +378,6 @@ color: blue;
     transform: scale(1.05);
 }
 .graphic-overskrift:hover{
-    color: blue;
+    color: #3cf9ff;
 }
 }

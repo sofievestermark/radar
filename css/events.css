@@ -6,9 +6,9 @@
 
 :root {
     --primary-color:white;
-    --secundary-color: blue;
+    --secundary-color: #3cf9ff;
     --tertiary-color:#00ed5a;
-    --quaternary-color:rgb(255, 128, 0);
+    --quaternary-color:#ff7436;
     --quinary-color:#1e1e1e;
 }
 
@@ -113,11 +113,11 @@
         
       
         .billede-container:hover .overlay-tekst {
-            color:#00ed5a;
+            opacity: 0.8; 
         }
         
         .billeder:hover{
-            border: 1px solid blue;
+            border: 1px solid #3cf9ff;
         }
 
        
@@ -222,11 +222,11 @@
     
   
     .billede-container:hover .overlay-tekst {
-        color:#00ed5a;
+        opacity: 0.8; 
     }
     
     .billeder:hover{
-        border: 1px solid blue;
+        border: 1px solid #3cf9ff;
     }
 }
 
@@ -329,10 +329,10 @@
     
   
     .billede-container:hover .overlay-tekst {
-        color:#00ed5a;
+        opacity: 0.8; 
     }
     
     .billeder:hover{
-        border: 1px solid blue;
+        border: 1px solid #3cf9ff;
     }
 }

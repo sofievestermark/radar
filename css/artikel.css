@@ -6,9 +6,9 @@
 
 :root {
     --primary-color:white;
-    --secundary-color: blue;
+    --secundary-color: #3cf9ff;
     --tertiary-color:#00ed5a;
-    --quaternary-color:rgb(255, 128, 0);
+    --quaternary-color:#ff7436;
     --quinary-color:#1e1e1e;
 }
 
@@ -34,10 +34,11 @@
     }
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
-        background-image: url("../img/artikel1.webp"); 
+        background-image: url("../img/artikelforsøg3.webp"); 
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
+        /* opacity: 80%; */
         width: auto;
         height: 50rem; 
         display: flex;
@@ -72,7 +73,7 @@
     }
 
     .eyebrow {
-    color: #00ed5a;
+    color: #3cf9ff;
     font-family: 'montserrat';
     }
 
@@ -138,8 +139,7 @@
   
   /* Hover effect */
   .button:hover {
-    background-color:blue; 
-    color: #00ed5a;
+    border: 1px solid #3cf9ff;
 
   }
   
@@ -162,7 +162,7 @@
     }
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
-        background-image: url("../img/artikel1.webp"); 
+        background-image: url("../img/artikelforsøg3.webp"); 
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
@@ -199,7 +199,7 @@
     }
 
     .eyebrow {
-    color: #00ed5a;
+    color: #3cf9ff;
     font-family: 'montserrat';
     }
 
@@ -265,8 +265,7 @@
   
   /* Hover effect */
   .button:hover {
-    background-color:blue; 
-    color: #00ed5a;
+    border: 1px solid #3cf9ff;
 
   }
   
@@ -289,7 +288,7 @@
     }
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
-        background-image: url("../img/artikel1.webp"); 
+        background-image: url("../img/artikelforsøg3.webp"); 
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
@@ -326,7 +325,7 @@
     }
 
     .eyebrow {
-    color: #00ed5a;
+    color: #3cf9ff;
     font-family: 'montserrat';
     }
 
@@ -392,8 +391,7 @@
   
   /* Hover effect */
   .button:hover {
-    background-color:blue; 
-    color: #00ed5a;
+    border: 1px solid #3cf9ff;
 
   }
 }

@@ -6,9 +6,9 @@
 
 :root {
     --primary-color:white;
-    --secundary-color: blue;
+    --secundary-color: #3cf9ff;
     --tertiary-color:#00ed5a;
-    --quaternary-color:rgb(255, 128, 0);
+    --quaternary-color:#ff7436;
     --quinary-color:#1e1e1e;
 }
 
@@ -25,8 +25,8 @@
         margin-top: 4rem;
         font-family: 'montserrat';
         text-decoration: none;
-        background-color: #1e1e1e;
-        color: white;
+        background-color:var(--quinary-color);
+        color:white;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;  
@@ -35,9 +35,10 @@
         overflow-x: hidden; /* Fjern horisontal scroll */
     }
 
+    /* video sektion */
     video {
         width: 100%;
-        height:90%;
+        height:10%;
     }
 
     h2{
@@ -49,10 +50,11 @@
         display: flex;
         justify-content: center;
     }
+   
     /* event billede sektion */
     .billede-container {
-        position: relative; /* Make the container a positioned element */
-        display: inline-block; /* Keep it aligned with the image dimensions */
+        position: relative; 
+        display: inline-block;
         width: 100%;
         overflow: hidden;
     }
@@ -73,8 +75,8 @@
     }
 
     .billede-sektion a {
-        text-decoration: none; /* Removes underline */
-        color: white; /* Changes link color */
+        text-decoration: none; /* fjerer lilla linje */
+        color: white; 
     }
     
     .sektion {
@@ -87,25 +89,34 @@
         font-family: 'impact';
     }
     .overlay-tekst {
-        position: absolute; /* Position relative to .billede-container */
-        top: 50%; /* Center vertically */
-        left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); /* Adjust centering */
-        color: white; /* Text color */
+        position: absolute; /* Position relative ift. .billede-container */
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        color: white;
         font-family: 'impact';
-        font-size: 3rem; /* Adjust size as needed */
+        font-size: 3rem; 
         font-weight: bold;
-        z-index: 10; /* Ensure text stays above the image */
-        pointer-events: none; /* Prevent text from interfering with clicks on the link */
+        z-index: 10; 
+        pointer-events: none; 
     }
     
   
     .billede-container:hover .overlay-tekst {
-        opacity: 0.8; /* Optional hover effect for text */
+        opacity: 0.8; 
+    }
+
+    .overlay-tekst:hover{
+        display: none;
+    }
+
+    .billede-container:hover .overlay-tekst::after {
+        content: " Book billet"; /* This dynamically changes the text */
+        color: #3cf9ff;
     }
     
     .billeder:hover{
-        border: 1px solid #3cf9ff;
+        border: 1px solid white;
     }
 
     .cta {
@@ -117,7 +128,7 @@
         padding-top: 7%;
       }
       
-      /* Call-to-action button */
+      /* Call-to-action knap */
       .button {
         font-family: 'impact';
         font-size: 1.5rem; 
@@ -125,17 +136,17 @@
         color: white; 
         text-align: center; 
         padding: 1rem 2rem; 
-        border: 2px solid white; 
+        border: 1px solid white; 
         background-color: transparent; 
         cursor: pointer;
         transition: all 0.3s ease; 
         text-transform: uppercase; 
         line-height: 1.5; 
       }
-      
-      /* Hover effect */
+    
       .button:hover {
-        background-color: blue; 
+        background-color: #1e1e1e; 
+        border: 1px solid #3cf9ff; 
         }
 
       .video-sektion {
@@ -146,9 +157,11 @@
         text-align: center; 
       }
     
+
+      /* sektion med billedvideo */
     .billede-video {
-        max-width: 60%; /* Ensures video is responsive */
-        height: auto; /* Maintains aspect ratio */
+        max-width: 60%; 
+        height: auto;
     }
 
 
@@ -183,7 +196,7 @@
     } */
 
     h2.artikel {
-        background-image: url("../img/artikel1.webp"); 
+        background-image: url("../img/artikelforsøg3.webp"); 
         background-size: cover; /* Sørg for, at billedet fylder hele elementet */
         background-position: center center; 
         background-repeat: no-repeat; 
@@ -212,7 +225,7 @@
     }
 
     .artikel:hover {
-       color: blue;
+       color: #3cf9ff;
        transform: scale(1.05);
     }
     
@@ -240,7 +253,7 @@
         font-weight: 100;
     }
     .del:hover{
-        border: 1px dashed #00ed5a; 
+        border: 1px dashed #3cf9ff; 
         transform: scale(1.05);
     }
     
@@ -334,7 +347,7 @@ h4 {
 }
 
 .billeder:hover{
-    border: 1px solid blue;
+    border: 1px solid #3cf9ff;
 }
 
 .cta {
@@ -364,7 +377,7 @@ h4 {
   
   /* Hover effect */
   .button:hover {
-    background-color: blue; 
+    border: 1px solid #3cf9ff; 
     }
 
   .video-sektion {
@@ -439,14 +452,14 @@ section a {
 }
 
 .artikel:hover {
-   color: blue;
+   color: #3cf9ff;
    transform: scale(1.05);
 }
 
 .del {
     width: 60%; 
     padding: 1.25rem; 
-    border: 2px solid #00ed5a; 
+    border: 1px dashed white; 
      margin: 0 auto; 
     text-align: center; 
     box-sizing: border-box; 
@@ -467,7 +480,7 @@ section a {
     font-weight: 100;
 }
 .del:hover{
-    border: 2px solid blue; 
+    border: 1px dashed #3cf9ff; 
     transform: scale(1.05);
 }
 }
@@ -559,7 +572,7 @@ h4 {
 }
 
 .billeder:hover{
-    border: 1px solid blue;
+    border: 1px solid #3cf9ff;
 }
 
 .cta {
@@ -589,7 +602,7 @@ h4 {
   
   /* Hover effect */
   .button:hover {
-    background-color: blue; 
+    border: 1px solid #3cf9ff; 
     }
 
   .video-sektion {
@@ -668,14 +681,14 @@ section a {
 }
 
 .artikel:hover {
-   color: blue;
+   color: #3cf9ff;
    transform: scale(1.05);
 }
 
 .del {
     width: 80%; 
     padding: 1rem; 
-    border: 2px solid #00ed5a; 
+    border: 1px dashed white; 
      margin: 0 auto; 
     text-align: center; 
     box-sizing: border-box; 
@@ -696,7 +709,7 @@ section a {
     font-weight: 100;
 }
 .del:hover{
-    border: 2px solid blue; 
+    border: 1px dashed #3cf9ff; 
     transform: scale(1.05);
 }
 }
@@ -790,7 +803,7 @@ h4 {
 }
 
 .billeder:hover{
-    border: 1px solid blue;
+    border: 1px solid #3cf9ff;
 }
 
 .cta {
@@ -810,7 +823,7 @@ h4 {
     color: white; 
     text-align: center; 
     padding: 1rem 2rem; 
-    border: 2px solid white; 
+    border: 1px solid white; 
     background-color: transparent; 
     cursor: pointer;
     transition: all 0.3s ease; 
@@ -820,7 +833,7 @@ h4 {
   
   /* Hover effect */
   .button:hover {
-    background-color: blue; 
+    border: 1px solid #3cf9ff; 
     }
 
   .video-sektion {
@@ -868,14 +881,14 @@ section a {
 }
 
 .artikel:hover {
-   color: blue;
+   color: #3cf9ff;
    transform: scale(1.05);
 }
 
 .del {
     width: 90%; 
     padding: 0.75rem; 
-    border: 2px solid #00ed5a; 
+    border: 1px dashed white; 
      margin: 0 auto; 
     text-align: center; 
     box-sizing: border-box; 
@@ -896,7 +909,7 @@ section a {
     font-weight: 100;
 }
 .del:hover{
-    border: 2px solid blue; 
+    border: 2px dashed #3cf9ff; 
     transform: scale(1.05);
 }
 }

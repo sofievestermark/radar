@@ -7,9 +7,9 @@
 
 :root {
     --primary-color:white;
-    --secundary-color: blue;
+    --secundary-color: #3cf9ff;
     --tertiary-color:#00ed5a;
-    --quaternary-color:rgb(255, 128, 0);
+    --quaternary-color:#ff7436;
     --quinary-color:#1e1e1e;
 }
 
@@ -47,7 +47,6 @@ footer .footer {
     padding-top:5%;
     padding-bottom:5%;
     text-align: center;
-    border-top: 0.05rem solid blue;
 }
 
 .footer-content {
@@ -110,7 +109,7 @@ footer .footer {
 }
 
 .nyhedsbrev button:hover {
-    background-color: blue;
+    background-color: #3cf9ff;
     color: black;
 }
 
@@ -128,7 +127,7 @@ footer .footer {
 }
 
 .social-icons a:hover {
-    color: #00ed5a;
+    color: #3cf9ff;
 }
 
 
@@ -168,7 +167,7 @@ footer .footer {
         color: white;
         padding: 2vh;
         text-align: center;
-        border-top: 1px solid blue;
+        
     }
     
     .footer-content {
@@ -231,7 +230,7 @@ footer .footer {
     }
     
     .nyhedsbrev button:hover {
-        background-color: blue;
+        background-color: #3cf9ff;
         color: black;
     }
     
@@ -249,7 +248,7 @@ footer .footer {
     }
     
     .social-icons a:hover {
-        color: blue;
+        color: #3cf9ff;
     }
     
     
@@ -286,7 +285,7 @@ footer .footer {
         color: white;
         padding: 3vh;
         text-align: center;
-        border-top: 1px solid blue;
+       
     }
 
     section .footer-content{
@@ -359,7 +358,7 @@ footer .footer {
     }
   
     .nyhedsbrev button:hover {
-        background-color: blue;
+        background-color: #3cf9ff;
         color: black;
     }
   
@@ -377,7 +376,7 @@ footer .footer {
     }
   
     .social-icons a:hover {
-        color: blue;
+        color: #3cf9ff;
     }
   
     .kontakt {
@@ -409,7 +408,7 @@ footer .footer {
         color: white;
         padding: 3vh;
         text-align: center;
-        border-top: 1px solid blue;
+        border-top: 0.5px solid #3cf9ff;
     }
 
     section .footer-content{
@@ -482,7 +481,7 @@ footer .footer {
     }
   
     .nyhedsbrev button:hover {
-        background-color: blue;
+        background-color: #3cf9ff;
         color: black;
     }
   
@@ -500,7 +499,7 @@ footer .footer {
     }
   
     .social-icons a:hover {
-        color: blue;
+        color: #3cf9ff;
     }
   
     .kontakt {

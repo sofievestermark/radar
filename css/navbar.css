@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary-color:white;
+    --secundary-color: #3cf9ff;
+    --tertiary-color:#00ed5a;
+    --quaternary-color:#ff7436;
+    --quinary-color:#1e1e1e;
+}
 
 body {
     font-family: 'montserrat';
@@ -22,7 +29,7 @@ header {
     right:0.3rem;
     width: 100%;
     z-index: 1000;
-    background: transparent;
+    background: #1e1e1e;
     box-shadow: 0 0.3rem 0.6rem rgba(0,0,0,0.1);
     padding: 0.3rem;
     display: flex;
@@ -69,8 +76,8 @@ header .navbar ul li a {
 
 /* Hovereffekt til menupunkterne */
 header .navbar ul li a:hover {
-    background: rgba(0,0,0,0.1);
-    color: #fff;
+    background: white;
+    color: #1e1e1e;
 }
 
 /* Første niveau af undermenu */
@@ -79,7 +86,7 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 12rem; /* Ensartet bredde */
-    background: transparent; /* Let baggrundsfarve for synlighed */
+    background: #1e1e1e; /* Let baggrundsfarve for synlighed */
     display: none;
     padding: 0;
 }
@@ -103,7 +110,8 @@ header .navbar ul li ul li a {
 }
 
 header .navbar ul li ul li a:hover {
-    border: 0.06rem solid blue;
+    background: #1e1e1e;
+    color: #3cf9ff;
 }
 
 /* Næste niveau af undermenu */
@@ -249,9 +257,9 @@ display: none;
     /* styling af selve burgermenuen (når man har klikket på stregerne) */
         .links-container{
             height: 100%;
-            width: 100%;
+            width: 32%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items:flex-start;
             background-color:#1e1e1e;
     
@@ -317,4 +325,28 @@ display: none;
         padding-left: 0;
         margin-top: 0.3rem;
     }
+
+    @media screen and (max-width: 700px){
+    .links-container{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        background-color:#1e1e1e;
+
+       flex-direction: column; /* vertikale menupunkter */
+       align-items: flex-start; /* paceret i venstre side af container */
+
+       position: fixed; /* nav baren følger med ved scroll */
+       top: 0;
+       right: -100%; /* boksen er per automatik skjult når den er -100% */
+       z-index: 10;
+       width: 18.75rempx;
+       color: black;
+
+       box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25);
+       transition: 1s ease-out; /* smooth når man åbner baren */
+       }
+}
 }
