@@ -115,6 +115,10 @@
         .billede-container:hover .overlay-tekst {
             opacity: 0.8; 
         }
+
+        .billede-container:hover .pris {
+            color: #3cf9ff;
+        }
         
         .billeder:hover{
             border: 1px solid #3cf9ff;
