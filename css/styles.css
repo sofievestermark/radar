@@ -331,27 +331,34 @@ h4 {
     font-family: 'impact';
 }
 .overlay-tekst {
-    position: absolute; /* Position relative to .billede-container */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust centering */
-    color: white; /* Text color */
+    position: absolute; /* Position relative ift .billede-container */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
     font-family: 'impact';
-    font-size: 3rem; /* Adjust size as needed */
+    font-size: 3rem; 
     font-weight: bold;
-    z-index: 10; /* Ensure text stays above the image */
-    pointer-events: none; /* Prevent text from interfering with clicks on the link */
+    z-index: 10; 
+    pointer-events: none; 
 }
 
 
-.billede-container:hover .overlay-tekst {
-    opacity: 0.8; /* Optional hover effect for text */
+.billede-container:hover .overlay-tekst::after {
+    content: " Book billet"; /* ændrer teksten */
+    color: #3cf9ff;
+}
+
+.billede-container:hover ~ .pris {
+    font-family: 'impact';
 }
 
 .billeder:hover{
-    border: 1px solid #3cf9ff;
+    border: 1px solid white;
 }
 
+
+ /* Call-to-action button */
 .cta {
     display: flex;
     justify-content: center;
@@ -361,7 +368,7 @@ h4 {
     padding-top: 7%;
   }
   
-  /* Call-to-action button */
+ 
   .button {
     font-family: 'impact';
     font-size: 1.5rem; 
@@ -382,6 +389,9 @@ h4 {
     border: 1px solid #3cf9ff; 
     }
 
+
+    /* video sektion */
+
   .video-sektion {
     display: flex;
     flex-direction: column;
@@ -391,41 +401,14 @@ h4 {
   }
 
 .billede-video {
-    max-width: 60%; /* Ensures video is responsive */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 60%; 
+    height: auto; 
 }
 
 
-/* sektion med link til artikel */
-/* h2.artikel {
-    background-image: url("../img/artikel1.webp"); 
-    background-size:80%; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    width: auto;
-    height: 40rem; 
-    display: flex;
-    position: relative; 
-    margin-top: 5%;
-    color: white;
-
-    display: flex;
-    text-align: center;
-    padding-bottom: 7%;
-    padding-top:17%;
-    font-family: 'impact';
-    text-transform: uppercase;
-    font-size: 4rem;
-    line-height: 4rem;
-    
-}
-
-section a {
-    text-decoration: none;
-} */
 
 h2.artikel {
-    background-image: url("../img/artikel1.webp"); 
+    background-image: url("../img/artikelforsøg3.webp"); 
     background-size: cover; /* Sørg for, at billedet fylder hele elementet */
     background-position: center; 
     background-repeat: no-repeat; 
@@ -441,11 +424,11 @@ h2.artikel {
     color: white;
 
     text-align: center;
-    font-family: 'Impact', sans-serif; /* Brug 'sans-serif' som fallback */
+    font-family: 'Impact', sans-serif; 
     text-transform: uppercase;
     font-size: 3rem;
     line-height: 3rem;
-    padding: 0; /* Fjern unødvendig polstring */
+    padding: 0; 
 }
 
 /* Sikrer, at links ikke har understregning */
@@ -556,25 +539,31 @@ h4 {
     font-family: 'impact';
 }
 .overlay-tekst {
-    position: absolute; /* Position relative to .billede-container */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust centering */
-    color: white; /* Text color */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
     font-family: 'impact';
-    font-size: 3rem; /* Adjust size as needed */
+    font-size: 3rem; 
     font-weight: bold;
-    z-index: 10; /* Ensure text stays above the image */
-    pointer-events: none; /* Prevent text from interfering with clicks on the link */
+    z-index: 10; 
+    pointer-events: none;
 }
 
 
-.billede-container:hover .overlay-tekst {
-    opacity: 0.8; /* Optional hover effect for text */
+.billede-container:hover .overlay-tekst::after {
+    content: " Book billet"; /* ændrer teksten */
+    color: #3cf9ff;
+}
+
+.billede-container:hover ~ .pris {
+    font-family: 'impact';
 }
 
 .billeder:hover{
-    border: 1px solid #3cf9ff;
+    border: 1px solid white;
+}
 }
 
 .cta {
@@ -621,35 +610,7 @@ h4 {
 }
 
 
-/* sektion med link til artikel */
-/* h2.artikel {
-    background-image: url("../img/artikel1.webp"); 
-    background-size:80%; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    width: auto;
-    height: 40rem; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; 
-    margin-top: 5%;
-    color: white;
 
-    display: flex;
-    text-align: center;
-    padding-bottom: 7%;
-    padding-top:17%;
-    font-family: 'impact';
-    text-transform: uppercase;
-    font-size: 4rem;
-    line-height: 4rem;
-    
-}
-
-section a {
-    text-decoration: none;
-} */
 
 h2.artikel {
     background-image: url("../img/artikel1.webp"); 
@@ -714,7 +675,7 @@ section a {
     border: 1px dashed #3cf9ff; 
     transform: scale(1.05);
 }
-}
+
 
 
 /* MOBIL */
@@ -751,8 +712,8 @@ h2{
 }
 /* event billede sektion */
 .billede-container {
-    position: relative; /* Make the container a positioned element */
-    display: inline-block; /* Keep it aligned with the image dimensions */
+    position: relative; 
+    display: inline-block; 
     width: 100%;
     overflow: hidden;
 }
@@ -773,8 +734,8 @@ h2{
 }
 
 .billede-sektion a {
-    text-decoration: none; /* Removes underline */
-    color: white; /* Changes link color */
+    text-decoration: none; 
+    color: white; 
 }
 
 .sektion {
@@ -787,25 +748,30 @@ h4 {
     font-family: 'impact';
 }
 .overlay-tekst {
-    position: absolute; /* Position relative to .billede-container */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust centering */
-    color: white; /* Text color */
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
     font-family: 'impact';
-    font-size: 3rem; /* Adjust size as needed */
+    font-size: 3rem; 
     font-weight: bold;
-    z-index: 10; /* Ensure text stays above the image */
-    pointer-events: none; /* Prevent text from interfering with clicks on the link */
+    z-index: 10; 
+    pointer-events: none; 
 }
 
 
-.billede-container:hover .overlay-tekst {
-    opacity: 0.8; /* Optional hover effect for text */
+.billede-container:hover .overlay-tekst::after {
+    content: " Book billet"; /* ændrer teksten */
+    color: #3cf9ff;
+}
+
+.billede-container:hover ~ .pris {
+    font-family: 'impact';
 }
 
 .billeder:hover{
-    border: 1px solid #3cf9ff;
+    border: 1px solid white;
 }
 
 .cta {
@@ -874,7 +840,7 @@ h2.artikel {
     text-transform: uppercase;
     font-size: 2rem;
     line-height: 2rem;
-    padding: 0; /* Fjern unødvendig polstring */
+    padding: 0; 
 }
 
 /* Sikrer, at links ikke har understregning */

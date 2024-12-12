@@ -66,6 +66,7 @@
             display: inline-block; 
             width: 100%;
             overflow: hidden;
+            line-height: 230%;
         }
         
         .billeder {
@@ -302,6 +303,7 @@
         display: inline-block; 
         width: 100%;
         overflow: hidden;
+
     }
     
     .billeder {

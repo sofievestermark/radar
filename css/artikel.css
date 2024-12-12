@@ -23,6 +23,7 @@
     body {
         margin-top: 4rem;
         font-family: 'montserrat';
+        font-weight: 100;
         text-decoration: none;
         background-color: var(--quinary-color);
         color:white;
@@ -98,17 +99,36 @@
         padding-bottom: 3%;
     }
 
+    .citat{
+        font-style: italic;
+        font-size: 110%;
+        padding-left: 5%;
+    }
+
     /* anførelsestegn slut */
     .anførelses-tegn{
-        font-family: var(--primary-font);
-        font-size: 2.5rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 5rem;
         padding-left:1%;
+        padding-right: 2%;
+        color: white;
+        
     }
 
     /* anførelsestegn begynd */
     span{
-        font-family: 'impact';
-        font-size: 2.5rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 5rem;
+        padding-left:1%;
+        padding-right: 2%;
+        color: white;
+    }
+
+    .citat:hover .anførelses-tegn {
+        color: #3cf9ff;
+    }
+    .citat:hover span {
+        color: #3cf9ff;
     }
 
 
@@ -135,11 +155,14 @@
     transition: all 0.3s ease; 
     text-transform: uppercase; 
     line-height: 1.5; 
+    width: 120%;
   }
   
   /* Hover effect */
   .button:hover {
-    border: 1px solid #3cf9ff;
+    border: 2px solid #3cf9ff;
+    background-color: white;
+    color: #1e1e1e;
 
   }
   
@@ -224,17 +247,36 @@
         padding-bottom: 3%;
     }
 
+    .citat{
+        font-style: italic;
+        font-size: 110%;
+        padding-left: 5%;
+    }
+
     /* anførelsestegn slut */
     .anførelses-tegn{
-        font-family: var(--primary-font);
-        font-size: 2.5rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 5rem;
         padding-left:1%;
+        padding-right: 2%;
+        color: white;
+        
     }
 
     /* anførelsestegn begynd */
     span{
-        font-family: 'impact';
-        font-size: 2.5rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 5rem;
+        padding-left:1%;
+        padding-right: 2%;
+        color: white;
+    }
+
+    .citat:hover .anførelses-tegn {
+        color: #3cf9ff;
+    }
+    .citat:hover span {
+        color: #3cf9ff;
     }
 
 
@@ -261,11 +303,14 @@
     transition: all 0.3s ease; 
     text-transform: uppercase; 
     line-height: 1.5; 
+    width: 120%;
   }
   
-  /* Hover effect */
+  /* button hover */
   .button:hover {
-    border: 1px solid #3cf9ff;
+    border: 2px solid #3cf9ff;
+    background-color: white;
+    color: #1e1e1e;
 
   }
   
@@ -350,18 +395,32 @@
         padding-bottom: 3%;
     }
 
+    .citat{
+        font-style: italic;
+        font-size: 110%;
+        padding-left: 5%;
+    }
+
     /* anførelsestegn slut */
     .anførelses-tegn{
-        font-family: var(--primary-font);
-        font-size: 2.5rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 5rem;
         padding-left:1%;
+        padding-right: 2%;
+        color: #3cf9ff; /* ingen hover på mobil */
+        
     }
 
     /* anførelsestegn begynd */
     span{
-        font-family: 'impact';
-        font-size: 2.5rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 5rem;
+        padding-left:1%;
+        padding-right: 2%;
+        color: #3cf9ff; /* ingen hover på mobil */
     }
+
+
 
 
 /* Styling af knap */
