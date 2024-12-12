@@ -35,12 +35,12 @@
 
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
-        background-image: url("../img/inforgraphicimg.webp");
+        background-image: url("../img/forsøg.png");
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
         width: auto;
-        height: 50rem; 
+        height: 60rem; 
         display: flex;
         /* align-items: center;
         justify-content: center; */
