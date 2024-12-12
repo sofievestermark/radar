@@ -145,6 +145,7 @@
         transition: all 0.3s ease; 
         text-transform: uppercase; 
         line-height: 1.5; 
+        text-decoration: none;
       }
     
       .button:hover {
@@ -356,6 +357,7 @@ h4 {
     transition: all 0.3s ease; 
     text-transform: uppercase; 
     line-height: 1.5; 
+    text-decoration: none;
   }
   
   /* Hover effect */
@@ -565,6 +567,7 @@ h4 {
     transition: all 0.3s ease; 
     text-transform: uppercase; 
     line-height: 1.5; 
+    text-decoration: none;
   }
   
   /* Hover effect */
@@ -701,12 +704,11 @@ h2{
 .billeder {
     display: block;
     width: 90%;
-    height: auto;
 }
 
    .billede-sektion {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.25rem;
     padding: 1.25rem;
     max-width: 90%;
@@ -778,6 +780,7 @@ h4 {
     transition: all 0.3s ease; 
     text-transform: uppercase; 
     line-height: 1.5; 
+    text-decoration: none;
   }
   
   /* Hover effect */
@@ -803,7 +806,7 @@ h4 {
 
 /* sektion med link til artikel */
 h2.artikel {
-    background-image: url("../img/artikel1.webp"); 
+    background-image: url("../img/artikelforsøg3.webp"); 
     background-size: cover; /* Sørg for, at billedet fylder hele elementet */
     background-position: center; 
     background-repeat: no-repeat; 

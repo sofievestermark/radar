@@ -29,7 +29,7 @@ header {
     right:0.3rem;
     width: 100%;
     z-index: 1000;
-    background: #1e1e1e;
+    background: transparent;
     box-shadow: 0 0.3rem 0.6rem rgba(0,0,0,0.1);
     padding: 0.3rem;
     display: flex;
@@ -41,7 +41,7 @@ header {
 /* Header logo */
 header .logo{
     margin-left: 0.6rem;
-    padding-left: 0;
+    padding-left: 0rem;
 }
 
 .logo{
@@ -175,8 +175,8 @@ display: none;
     }
     
     header .logo{
-        margin-left: 0.0625;
-        padding-left: 0;
+        margin-left: 0.0625rem;
+        padding-left: 0rem;
     }
     
     .logo{
@@ -253,8 +253,7 @@ display: none;
     
     /* styling for mobil specifikt */
     
-    /* den boks der folder ud når man klikker de tre prikker */
-    /* styling af selve burgermenuen (når man har klikket på stregerne) */
+    /* den boks der folder ud når man klikker de tre streger */
         .links-container{
             height: 100%;
             width: 32%;
@@ -270,7 +269,7 @@ display: none;
            top: 0;
            right: -100%; /* boksen er per automatik skjult når den er -100% */
            z-index: 10;
-           width: 18.75rempx;
+           width: 18.75rem;
            color: black;
     
            box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25);
@@ -342,7 +341,7 @@ display: none;
        top: 0;
        right: -100%; /* boksen er per automatik skjult når den er -100% */
        z-index: 10;
-       width: 18.75rempx;
+       width: 18.75rem;
        color: black;
 
        box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25);
