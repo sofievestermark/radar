@@ -85,9 +85,10 @@
     }
 
     h4 {
-       text-decoration: none;
         font-family: 'impact';
+        font-size: 1.5rem;
     }
+
     .overlay-tekst {
         position: absolute; /* Position relative ift. .billede-container */
         top: 50%; 
@@ -147,7 +148,8 @@
       }
     
       .button:hover {
-        background-color: #1e1e1e; 
+        background-color: white; 
+        color: #1e1e1e;
         border: 1px solid #3cf9ff; 
         }
 
@@ -167,35 +169,6 @@
     }
 
 
-    /* sektion med link til artikel */
-   /* h2.artikel {
-        background-image: url("../img/artikel1.webp"); 
-        background-size:80%; 
-        background-position: center; 
-        background-repeat: no-repeat; 
-        width: auto;
-        height: 40rem; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative; 
-        margin-top: 5%;
-        color: white;
-
-        display: flex;
-        text-align: center;
-        padding-bottom: 7%;
-        padding-top:17%;
-        font-family: 'impact';
-        text-transform: uppercase;
-        font-size: 4rem;
-        line-height: 4rem;
-        
-    }
-
-    section a {
-        text-decoration: none;
-    } */
 
     h2.artikel {
         background-image: url("../img/artikelforsøg3.webp"); 
@@ -205,7 +178,7 @@
         width: 80%; /* Sikrer responsiv bredde */
         height: 40rem; /* Tilpasset højde */
         margin: 0 auto;
-        padding-right: 0 5%;
+        padding-right: 5%;
         display: flex;
         align-items: center; /* Centrerer teksten vertikalt */
         justify-content: center; /* Centrerer teksten horisontalt */
@@ -327,8 +300,8 @@ h2{
 }
 
 h4 {
-   text-decoration: none;
     font-family: 'impact';
+    font-size: 1.5rem;
 }
 .overlay-tekst {
     position: absolute; /* Position relative ift .billede-container */
@@ -341,6 +314,7 @@ h4 {
     font-weight: bold;
     z-index: 10; 
     pointer-events: none; 
+    line-height: 85%;  /* ændret liniehøjde så "book billet kan læses" */
 }
 
 
@@ -386,6 +360,8 @@ h4 {
   
   /* Hover effect */
   .button:hover {
+    background-color: white; 
+    color: #1e1e1e;
     border: 1px solid #3cf9ff; 
     }
 
@@ -415,7 +391,7 @@ h2.artikel {
     width: 80%; /* Sikrer responsiv bredde */
     height: 30rem; /* Tilpasset højde */
     margin: 0 auto;
-    padding-right: 0 5%;
+    padding-right:5%;
     display: flex;
     align-items: center; /* Centrerer teksten vertikalt */
     justify-content: center; /* Centrerer teksten horisontalt */
@@ -535,8 +511,8 @@ h2{
 }
 
 h4 {
-   text-decoration: none;
     font-family: 'impact';
+    font-size: 1.5rem;
 }
 .overlay-tekst {
     position: absolute; 
@@ -549,6 +525,7 @@ h4 {
     font-weight: bold;
     z-index: 10; 
     pointer-events: none;
+    line-height: 85%;  /* ændret liniehøjde så "book billet kan læses" */
 }
 
 
@@ -563,7 +540,6 @@ h4 {
 
 .billeder:hover{
     border: 1px solid white;
-}
 }
 
 .cta {
@@ -593,6 +569,8 @@ h4 {
   
   /* Hover effect */
   .button:hover {
+    background-color: white; 
+    color: #1e1e1e;
     border: 1px solid #3cf9ff; 
     }
 
@@ -620,7 +598,7 @@ h2.artikel {
     width: 80%; /* Sikrer responsiv bredde */
     height: 20rem; /* Tilpasset højde */
     margin: 0 auto;
-    padding-right: 0 5%;
+    padding-right: 5%;
     display: flex;
     align-items: center; /* Centrerer teksten vertikalt */
     justify-content: center; /* Centrerer teksten horisontalt */
@@ -675,6 +653,8 @@ section a {
     border: 1px dashed #3cf9ff; 
     transform: scale(1.05);
 }
+}
+
 
 
 
@@ -744,8 +724,8 @@ h2{
 }
 
 h4 {
-   text-decoration: none;
     font-family: 'impact';
+    font-size: 1.5rem;
 }
 .overlay-tekst {
     position: absolute;
@@ -757,7 +737,8 @@ h4 {
     font-size: 3rem; 
     font-weight: bold;
     z-index: 10; 
-    pointer-events: none; 
+    pointer-events: none;
+    line-height: 85%;  /* ændret liniehøjde så "book billet kan læses" */ 
 }
 
 
@@ -801,6 +782,8 @@ h4 {
   
   /* Hover effect */
   .button:hover {
+    background-color: white; 
+    color: #1e1e1e;
     border: 1px solid #3cf9ff; 
     }
 
@@ -827,7 +810,7 @@ h2.artikel {
     width: 80%; /* Sikrer responsiv bredde */
     height: 20rem; /* Tilpasset højde */
     margin: 0 auto;
-    padding-right: 0 5%;
+    padding-right: 5%;
     display: flex;
     align-items: center; /* Centrerer teksten vertikalt */
     justify-content: center; /* Centrerer teksten horisontalt */
