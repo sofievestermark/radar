@@ -106,13 +106,15 @@
         opacity: 0.8; 
     }
 
-    .overlay-tekst:hover{
-        display: none;
-    }
+
 
     .billede-container:hover .overlay-tekst::after {
-        content: " Book billet"; /* This dynamically changes the text */
+        content: " Book billet"; /* ændrer teksten */
         color: #3cf9ff;
+    }
+
+    .billede-container:hover ~ .pris {
+        font-family: 'impact';
     }
     
     .billeder:hover{

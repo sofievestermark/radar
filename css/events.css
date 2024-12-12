@@ -115,9 +115,14 @@
         .billede-container:hover .overlay-tekst {
             opacity: 0.8; 
         }
-
-        .billede-container:hover .pris {
+        
+        .billede-container:hover .overlay-tekst::after {
+            content: " Book billet"; /* ændrer teksten */
             color: #3cf9ff;
+        }
+
+        .billede-container:hover ~ .pris {
+            font-family: 'impact';
         }
         
         .billeder:hover{
