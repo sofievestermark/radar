@@ -115,7 +115,7 @@
         .billede-container:hover .overlay-tekst {
             opacity: 0.8; 
         }
-        
+
         .billede-container:hover .overlay-tekst::after {
             content: " Book billet"; /* ændrer teksten */
             color: #3cf9ff;
@@ -157,7 +157,6 @@
     justify-content: center; 
     align-items: center;
     text-align: center; 
-    /* height: 100vh; */
     padding-bottom: 7%;
     padding-top: 7%;
     background-color: #1e1e1e; 
@@ -217,25 +216,37 @@
         font-size: 1.5rem;
     }
     .overlay-tekst {
-        position: absolute; /* Position relative to .billede-container */
-        top: 50%; /* Center vertically */
-        left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); /* Adjust centering */
-        color: white; /* Text color */
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        color: white; 
         font-family: 'impact';
-        font-size: 3rem; /* Adjust size as needed */
+        font-size: 3rem;
         font-weight: bold;
-        z-index: 10; /* Ensure text stays above the image */
-        pointer-events: none; /* Prevent text from interfering with clicks on the link */
+        z-index: 10; 
+        pointer-events: none;
+        line-height: 85%;  /* ændret liniehøjde så "book billet kan læses" */
     }
     
   
     .billede-container:hover .overlay-tekst {
         opacity: 0.8; 
     }
+
+
+
+    .billede-container:hover .overlay-tekst::after {
+        content: " Book billet"; /* ændrer teksten */
+        color: #3cf9ff;
+    }
+
+    .billede-container:hover ~ .pris {
+        font-family: 'impact';
+    }
     
     .billeder:hover{
-        border: 1px solid #3cf9ff;
+        border: 1px solid white;
     }
 }
 
@@ -309,8 +320,8 @@
     }
 
     .billede-sektion a {
-        text-decoration: none; /* Removes underline */
-        color: white; /* Changes link color */
+        text-decoration: none; 
+        color: white; 
     }
     
     .sektion {
@@ -324,24 +335,35 @@
         font-size: 1.5rem;
     }
     .overlay-tekst {
-        position: absolute; /* Position relative to .billede-container */
-        top: 50%; /* Center vertically */
-        left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); /* Adjust centering */
-        color: white; /* Text color */
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        color: white; 
         font-family: 'impact';
-        font-size: 3rem; /* Adjust size as needed */
+        font-size: 3rem; 
         font-weight: bold;
-        z-index: 10; /* Ensure text stays above the image */
-        pointer-events: none; /* Prevent text from interfering with clicks on the link */
+        z-index: 10;
+        pointer-events: none; 
     }
     
   
     .billede-container:hover .overlay-tekst {
         opacity: 0.8; 
     }
+
+
+
+    .billede-container:hover .overlay-tekst::after {
+        content: " Book billet"; /* ændrer teksten */
+        color: #3cf9ff;
+    }
+
+    .billede-container:hover ~ .pris {
+        font-family: 'impact';
+    }
     
     .billeder:hover{
-        border: 1px solid #3cf9ff;
+        border: 1px solid white;
     }
 }
