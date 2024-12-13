@@ -73,7 +73,7 @@
     }
 
     .eyebrow {
-    color: #3cf9ff;
+    color: #7afdff;
     font-family:'montserrat';
     }
 
@@ -133,8 +133,9 @@
 .infographic-img:hover{
     transform: scale(1.05);
 }
+
 .graphic-overskrift:hover{
-    color: #3cf9ff;
+    color: #7afdff;
 }
 
 }

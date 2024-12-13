@@ -12,35 +12,38 @@
     --quinary-color:#1e1e1e;
 }
 
+ 
+/* skjuler min h1 (lavet for SEO) på alle enheder */
+h1{
+    display: none;
+}
 
-
-
-  
+/* generel body styling gælder alle enheder*/
+body {
+    margin-top: 4rem;
+    font-family: 'montserrat';
+    text-decoration: none;
+    background-color:var(--quinary-color);
+    color:white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    height: 100%;
+    line-height: 1.5rem;
+    overflow-x: hidden; /* Fjern horisontal scroll */
+    }
 
 /* webskærm */
 @media only screen and (min-width: 1100px) {
-
-    /* generel body styling */
-    body {
-        margin-top: 4rem;
-        font-family: 'montserrat';
-        text-decoration: none;
-        background-color:var(--quinary-color);
-        color:white;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;  
-        height: 100%;
-        line-height: 1.5rem;
-        overflow-x: hidden; /* Fjern horisontal scroll */
-    }
 
     /* video sektion */
     video {
         width: 100%;
         height:10%;
     }
+   
 
+    /* event billede sektion */
     h2{
         font-family: 'impact';
         padding-top: 7%;
@@ -50,8 +53,7 @@
         display: flex;
         justify-content: center;
     }
-   
-    /* event billede sektion */
+
     .billede-container {
         position: relative; 
         display: inline-block;
@@ -98,7 +100,7 @@
         font-family: 'impact';
         font-size: 3rem; 
         font-weight: bold;
-        z-index: 10; 
+        z-index: 10; /* tekst over billede */
         pointer-events: none; 
     }
     
@@ -108,12 +110,13 @@
     }
 
 
-
+/* jeg ville egentlig have at dato skulle ændre sig til "book billet" - pseudoklassen after indsætter "book billet" efter  */
     .billede-container:hover .overlay-tekst::after {
         content: " Book billet"; /* ændrer teksten */
         color: #3cf9ff;
     }
 
+    /* pris tekst bliver fed/impact ved hover */
     .billede-container:hover ~ .pris {
         font-family: 'impact';
     }
@@ -122,13 +125,15 @@
         border: 1px solid white;
     }
 
+
+    /* sttling af CTA knap */
     .cta {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
         padding-bottom:10%;
-        padding-top: 7%;
+        padding-top: 1%;
       }
       
       /* Call-to-action knap */
@@ -154,6 +159,8 @@
         border: 1px solid #3cf9ff; 
         }
 
+
+    /* video collage */
       .video-sektion {
         display: flex;
         flex-direction: column;
@@ -161,16 +168,14 @@
         justify-content: center; 
         text-align: center; 
       }
-    
 
-      /* sektion med billedvideo */
     .billede-video {
         max-width: 60%; 
         height: auto;
     }
 
 
-
+/* link til artikel side */
     h2.artikel {
         background-image: url("../img/artikelforsøg3.webp"); 
         background-size: cover; /* Sørg for, at billedet fylder hele elementet */
@@ -195,7 +200,7 @@
         padding: 0; /* Fjern unødvendig polstring */
     }
     
-    /* Sikrer, at links ikke har understregning */
+    /* Sikrer, at links ikke har understregning / lila */
     section a {
         text-decoration: none;
     }
@@ -205,6 +210,9 @@
        transform: scale(1.05);
     }
     
+
+
+    /* sektion hvor man kan vinde billetter */
     .del {
         width: 60%; 
         padding: 1.25rem; 
@@ -212,8 +220,6 @@
          margin: 0 auto; 
         text-align: center; 
         box-sizing: border-box; 
-        /* height: 9.375rem; 
-        width: 56rem; */
         display: flex; 
         justify-content: center; 
         align-items: center;
@@ -238,20 +244,6 @@
 
 /* TABLET */
 @media only screen and (max-width: 1099px){
-  /* generel body styling */
-  body {
-    margin-top: 4rem;
-    font-family: 'montserrat';
-    text-decoration: none;
-    background-color: #1e1e1e;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;  
-    height: 100%;
-    line-height: 1.5rem;
-    overflow-x: hidden; /* Fjern horisontal scroll */
-}
 
 video {
     width: 100%;
@@ -267,10 +259,11 @@ h2{
     display: flex;
     justify-content: center;
 }
+
 /* event billede sektion */
 .billede-container {
-    position: relative; /* Make the container a positioned element */
-    display: inline-block; /* Keep it aligned with the image dimensions */
+    position: relative;
+    display: inline-block;
     width: 100%;
     overflow: hidden;
 }
@@ -291,8 +284,8 @@ h2{
 }
 
 .billede-sektion a {
-    text-decoration: none; /* Removes underline */
-    color: white; /* Changes link color */
+    text-decoration: none;
+    color: white; 
 }
 
 .sektion {
@@ -305,7 +298,7 @@ h4 {
     font-size: 1.5rem;
 }
 .overlay-tekst {
-    position: absolute; /* Position relative ift .billede-container */
+    position: absolute;
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
@@ -320,7 +313,7 @@ h4 {
 
 
 .billede-container:hover .overlay-tekst::after {
-    content: " Book billet"; /* ændrer teksten */
+    content: " Book billet"; /* tilføjer tekst (after) */
     color: #3cf9ff;
 }
 
@@ -333,7 +326,6 @@ h4 {
 }
 
 
- /* Call-to-action button */
 .cta {
     display: flex;
     justify-content: center;
@@ -387,16 +379,16 @@ h4 {
 
 h2.artikel {
     background-image: url("../img/artikelforsøg3.webp"); 
-    background-size: cover; /* Sørg for, at billedet fylder hele elementet */
+    background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
-    width: 80%; /* Sikrer responsiv bredde */
+    width: 80%; /*  responsiv bredde */
     height: 30rem; /* Tilpasset højde */
     margin: 0 auto;
     padding-right:5%;
     display: flex;
-    align-items: center; /* Centrerer teksten vertikalt */
-    justify-content: center; /* Centrerer teksten horisontalt */
+    align-items: center; 
+    justify-content: center;
     position: relative; 
     margin-top: 5%;
     color: white;
@@ -409,7 +401,7 @@ h2.artikel {
     padding: 0; 
 }
 
-/* Sikrer, at links ikke har understregning */
+/* Sikrer, at links ikke har understregning og er lila */
 section a {
     text-decoration: none;
 }
@@ -450,20 +442,6 @@ section a {
 
 /* BREAKPOINT */
 @media only screen and (max-width: 900px){
-     /* generel body styling */
-  body {
-    margin-top: 4rem;
-    font-family: 'montserrat';
-    text-decoration: none;
-    background-color: #1e1e1e;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;  
-    height: 100%;
-    line-height: 1.5rem;
-    overflow-x: hidden; /* Fjern horisontal scroll */
-}
 
 video {
     width: 100%;
@@ -479,10 +457,11 @@ h2{
     display: flex;
     justify-content: center;
 }
+
 /* event billede sektion */
 .billede-container {
-    position: relative; /* Make the container a positioned element */
-    display: inline-block; /* Keep it aligned with the image dimensions */
+    position: relative; 
+    display: inline-block;
     width: 100%;
     overflow: hidden;
 }
@@ -495,7 +474,7 @@ h2{
 
    .billede-sektion {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* ændres to 2 billeder */
     gap: 1.25rem;
     padding: 1.25rem;
     max-width: 90%;
@@ -503,8 +482,8 @@ h2{
 }
 
 .billede-sektion a {
-    text-decoration: none; /* Removes underline */
-    color: white; /* Changes link color */
+    text-decoration: none; 
+    color: white;
 }
 
 .sektion {
@@ -532,7 +511,7 @@ h4 {
 
 
 .billede-container:hover .overlay-tekst::after {
-    content: " Book billet"; /* ændrer teksten */
+    content: " Book billet"; 
     color: #3cf9ff;
 }
 
@@ -586,8 +565,8 @@ h4 {
   }
 
 .billede-video {
-    max-width: 60%; /* Ensures video is responsive */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 60%;
+    height: auto;
 }
 
 
@@ -595,31 +574,29 @@ h4 {
 
 h2.artikel {
     background-image: url("../img/artikel1.webp"); 
-    background-size: cover; /* Sørg for, at billedet fylder hele elementet */
+    background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    width: 80%; /* Sikrer responsiv bredde */
-    height: 20rem; /* Tilpasset højde */
+    width: 80%; 
+    height: 20rem; 
     margin: 0 auto;
     padding-right: 5%;
     display: flex;
-    align-items: center; /* Centrerer teksten vertikalt */
-    justify-content: center; /* Centrerer teksten horisontalt */
+    align-items: center; 
+    justify-content: center; 
     position: relative; 
     margin-top: 5%;
     color: white;
 
- 
-
     text-align: center;
-    font-family: 'Impact', sans-serif; /* Brug 'sans-serif' som fallback */
+    font-family: 'Impact', sans-serif; 
     text-transform: uppercase;
     font-size: 2rem;
     line-height: 2rem;
-    padding: 0; /* Fjern unødvendig polstring */
+    padding: 0; 
 }
 
-/* Sikrer, at links ikke har understregning */
+
 section a {
     text-decoration: none;
 }
@@ -636,8 +613,7 @@ section a {
      margin: 0 auto; 
     text-align: center; 
     box-sizing: border-box; 
-    /* height: 9.375rem; 
-    width: 56rem; */
+  
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -659,25 +635,9 @@ section a {
 }
 
 
-
-
 /* MOBIL */
 @media only screen and (max-width: 600px) {
-  /* generel body styling */
-  body {
-    margin-top: 4rem;
-    font-family: 'montserrat';
-    text-decoration: none;
-    background-color: #1e1e1e;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;  
-    height: 100%;
-    width: auto;
-    line-height: 1.5rem;
-    overflow-x: hidden; /* Fjern horisontal scroll */
-}
+
 
 video {
     width: 100%;
@@ -708,7 +668,7 @@ h2{
 
    .billede-sektion {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* kun 1 billede pr. linie */
     gap: 1.25rem;
     padding: 1.25rem;
     max-width: 90%;
@@ -745,7 +705,7 @@ h4 {
 
 
 .billede-container:hover .overlay-tekst::after {
-    content: " Book billet"; /* ændrer teksten */
+    content: " Book billet"; /* indsætter nyt content */
     color: #3cf9ff;
 }
 
@@ -800,30 +760,30 @@ h4 {
   }
 
 .billede-video {
-    max-width: 60%; /* Ensures video is responsive */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 60%; 
+    height: auto; 
 }
 
 
 /* sektion med link til artikel */
 h2.artikel {
     background-image: url("../img/artikelforsøg3.webp"); 
-    background-size: cover; /* Sørg for, at billedet fylder hele elementet */
+    background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    width: 80%; /* Sikrer responsiv bredde */
-    height: 20rem; /* Tilpasset højde */
+    width: 80%; 
+    height: 20rem; 
     margin: 0 auto;
     padding-right: 5%;
     display: flex;
-    align-items: center; /* Centrerer teksten vertikalt */
-    justify-content: center; /* Centrerer teksten horisontalt */
+    align-items: center; 
+    justify-content: center; 
     position: relative; 
     margin-top: 5%;
     color: white;
 
     text-align: center;
-    font-family: 'Impact', sans-serif; /* Brug 'sans-serif' som fallback */
+    font-family: 'Impact', sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
     line-height: 2rem;
@@ -847,8 +807,6 @@ section a {
      margin: 0 auto; 
     text-align: center; 
     box-sizing: border-box; 
-    /* height: 9.375rem; 
-    width: 56rem; */
     display: flex; 
     justify-content: center; 
     align-items: center;

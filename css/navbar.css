@@ -21,7 +21,7 @@ body {
     line-height: 2rem;
 }
 
-/* Styling af header */
+/* header styling */
 header {
     position: fixed;
     top:0;
@@ -38,7 +38,7 @@ header {
     text-transform: uppercase;
 }
 
-/* Header logo */
+/*  logo */
 header .logo{
     margin-left: 0.6rem;
     padding-left: 0rem;
@@ -50,7 +50,7 @@ header .logo{
 
 }
 
-/* Styling af hovedmenupunkterne */
+/* hovedmenuen */
 header .navbar ul {
     list-style: none;
 }
@@ -61,7 +61,7 @@ header .navbar ul li {
 }
 
 
-/* Styling af hovedmenu og undermenu */
+/* hovedmenu og undermenu styling */
 header .navbar ul li a {
     box-sizing: border-box;
     text-decoration: none;
@@ -74,65 +74,50 @@ header .navbar ul li a {
 }
 
 
-/* Hovereffekt til menupunkterne */
+/* hoved menupunkt hover */
 header .navbar ul li a:hover {
     background: white;
     color: #1e1e1e;
 }
 
-/* Første niveau af undermenu */
+/* undermenu niveau et */
 header .navbar ul li ul {
     box-sizing: border-box;
     position: absolute;
     left: 0;
-    width: 12rem; /* Ensartet bredde */
-    background: #1e1e1e; /* Let baggrundsfarve for synlighed */
+    width: 12rem;
+    background: #1e1e1e; 
     display: none;
     padding: 0;
 }
 
 header .navbar ul li ul li {
-    width: 100%; /* Ensartet bredde */
-    border-top: 0.06rem solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
+    width: 100%; 
+    border-top: 0.06rem solid rgba(255, 255, 255, 0.2); 
 }
 
-/* Styling af undermenu links */
+/* undermenuer styling */
 header .navbar ul li ul li a {
-    padding: 0.6rem 0; /* Juster padding for centrering */
-    color: white; /* Sørger for, at teksten er synlig */
+    padding: 0.6rem 0; 
+    color: white; 
     text-align: left;
     margin-left: 0.3rem;
-    width: 100%; /* Fyld hele bredden af menuen */
+    width: 100%; 
     display: block;
     box-sizing: border-box;
     font-family: 'montserrat';
     font-size: 0.9rem;
 }
 
+/* undermenu hover effekt */
 header .navbar ul li ul li a:hover {
     background: #1e1e1e;
     color: #3cf9ff;
 }
 
-/* Næste niveau af undermenu */
-header .navbar ul li ul li ul {
-    left: 100%; /* Justering til højre for første undermenu */
-    top: 0;
-    width: 12.5rem; /* Ensartet bredde */
-    background: transparent; /* Ensartet baggrund */
-    display: none;
-}
 
-header .navbar ul li ul li ul a {
-    padding: 0.06rem 0; /* Juster padding for centrering */
-    color: white; /* Sørger for synlig tekst */
-    text-align: center;
-    width: 100%; /* Fyld hele bredden af menuen */
-    display: block;
-    box-sizing: border-box;
-}
 
-/* Hover-effekt til at vise undermenuer */
+/* Hover-effekt der sørger for dropdown til undermenuer */
 header .navbar ul li:hover > ul,
 header .navbar ul li ul li:hover > ul {
     display: block;
@@ -151,7 +136,7 @@ header label {
     display: none;
 }
 
-/* Fjerner navigationsbar/burgermenu til mobil og tablet for desktop */
+/* Fjerner burgermenuen på desktop */
 .burgermenu{
 display: none;
 }
@@ -209,52 +194,33 @@ display: none;
         color: black;
     }
     
-    nav ul li ul li a:hover {
-        background: rgba(0,0,0,0.5);
-            color: #fff;
-            
-    }
-    
-    nav ul li ul li a{
-        height: 100%;
-        padding: 0 1.25rem;
-        display: flex;
-        align-items:flex-start;
-        text-decoration: none;
-        color: black;
-    }
-    
-    nav ul li a:hover {
-        background: rgba(0,0,0,0.5);
-            color: #fff;
-    }
 
-    /* ikoner */
-    /* nav div label svg  */
+
+    /* styling af ikoner ikoner */
+    /* de tre streger */
     .streger {
         fill: white;
         background-color: transparent;
     }
     
+    /* krydset */
     nav svg .kryds {
         fill: white;
         background-color: transparent;
     }
     
-    /* fjerner checkboks */
+    /* fjerner checkboks (åben) */
     #sidebar-active {
         display: none;
     }
     
-    /* fjerner checkboks  */
+    /* fjerner checkboks (lukket)*/
     .open-sidebar-button, .close-sidebar-button {
         display: none; 
     }
     
     
-    /* styling for mobil specifikt */
-    
-    /* den boks der folder ud når man klikker de tre streger */
+    /* styling af selve den boks der folder ud, når burgeren klikkes */
         .links-container{
             height: 100%;
             width: 32%;
@@ -263,18 +229,18 @@ display: none;
             align-items:flex-start;
             background-color:#1e1e1e;
     
-           flex-direction: column; /* vertikale menupunkter */
-           align-items: flex-start; /* paceret i venstre side af container */
+           flex-direction: column; /* opsætning over hinanden */
+           align-items: flex-start; /* placering i venstre side */
     
-           position: fixed; /* nav baren følger med ved scroll */
+           position: fixed; /* Navigationsbaren følger med når der scrolles */
            top: 0;
-           right: -100%; /* boksen er per automatik skjult når den er -100% */
+           right: -100%; /* den grå boks er skjult til de tre streger klikkes af */
            z-index: 10;
            width: 18.75rem;
            color: black;
     
-           box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25);
-           transition: 1s ease-out; /* smooth når man åbner baren */
+           box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25); /* svag skygge på boksen */
+           transition: 1s ease-out; /* åbnes smooth */
     
         }
     
@@ -292,13 +258,12 @@ display: none;
         display: block;
     }
     
-    /* ~ styler links-container hvis det er søskende til #sidebar-active */
-    /* pseudo klassen :cheked styler/reagerer når ikonet er "checked" altså når vi trykker på de tre streger*/
+    /* den grå boks reaktion/ændring npr de tre streger klikkes */
     #sidebar-active:checked ~ .links-container{
-    right: 0;  /* når værdien er 0 er menuen fremme når den er -100  */
+    right: 0;  /* ændres fra -100 (skjult) til 0 (synlig) */
     }
     
-    /* sørger for at vi klikker ud fra menu'en når vi klikker et andet sted på siden */
+    /* Effekt der gør det muligt at klikke ud af menuen ved klik udenfor den grå boks */
     #sidebar-active:checked ~ #overlay{
         height: 100%;
         width: 100%;
@@ -309,46 +274,37 @@ display: none;
         display: block;
     }
     
-    
-    header label {
-        font-size: 1.25rem;
-        color: #333;
-        cursor: pointer;
-        display: none;
-    }
-    
-    #menu-bar {
-        display: none;
-    }
     .navbar-menu li:hover > .dropdown {
         display: block;
-        position: relative;
+        position: relative; /* sørger for at undermenuerne ikke "dropper down" oveni hovedmenuerne */
         width: 100%;
         padding-left: 0;
         margin-top: 0.3rem;
     }
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 600px){
+
+        /* æÆndring i bredden, så menuen fylder mere af skærmen på mobil end tablet */
     .links-container{
         height: 100%;
-        width: 50%;
+        width: 50%; /* flyder 50% på mobil */
         display: flex;
         flex-direction: column;
         align-items:flex-start;
         background-color:#1e1e1e;
 
-       flex-direction: column; /* vertikale menupunkter */
-       align-items: flex-start; /* paceret i venstre side af container */
+       flex-direction: column;
+       align-items: flex-start;
 
-       position: fixed; /* nav baren følger med ved scroll */
+       position: fixed;
        top: 0;
-       right: -100%; /* boksen er per automatik skjult når den er -100% */
+       right: -100%; 
        z-index: 10;
        width: 18.75rem;
        color: black;
 
        box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25);
-       transition: 1s ease-out; /* smooth når man åbner baren */
+       transition: 1s ease-out;
        }
 }
 }
