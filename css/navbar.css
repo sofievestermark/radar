@@ -181,6 +181,7 @@ display: none;
     
     .logo{
         width: 15vw;
+        padding-top: 30%;
     
     }
     
@@ -283,6 +284,7 @@ display: none;
         width: 100%;
         padding: 1.25rem 1.85rem;
         justify-content: flex-start; 
+        font-family: 'montserrat';
     }
     
     .open-sidebar-button, .close-sidebar-button {
@@ -304,6 +306,7 @@ display: none;
         top: 0;
         left: 0;
         z-index: 9;
+        display: block;
     }
     
     

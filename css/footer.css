@@ -408,7 +408,7 @@ footer .footer {
         color: white;
         padding: 3vh;
         text-align: center;
-        border-top: 0.5px solid #3cf9ff;
+        padding-top: 30%;
     }
 
     section .footer-content{
@@ -440,6 +440,7 @@ footer .footer {
     .kontakt p {
         margin: 3%;
         font-size: 14px;
+        text-decoration: none;
     }
 
     .nyhedsbrev{

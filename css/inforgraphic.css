@@ -157,7 +157,7 @@
 
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
 .overskrift-sektion{
-    background-image: url("../img/redradarorange.webp"); 
+    background-image: url("../img/redradar.webp"); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -279,7 +279,7 @@ color: #3cf9ff;
 
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
-        background-image: url("../img/artikel2.webp"); 
+        background-image: url("../img/redradar.webp"); 
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
@@ -301,7 +301,7 @@ color: #3cf9ff;
         text-align: left;
         margin-bottom: 5%;
         padding-left: 5%;
-        margin-top: 5%;
+        margin-top: 1%;
     }
 
     .overskrift{
@@ -311,8 +311,8 @@ color: #3cf9ff;
         padding-top: 1%;
         font-family: 'impact';
         text-transform: uppercase;
-        font-size: 4rem;
-        line-height: 4rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
         color: white; /* min primary var color vil ikke virke */
     }
 
@@ -364,14 +364,15 @@ color: #3cf9ff;
 }
 
 .infographic-img{
-    width: 90%;    
+    width: 90%;  
+    padding-bottom: 10%;  
 }
 
 .graphic-overskrift {
     color: white;
     padding-bottom: 5%;
     text-transform: uppercase;
-    font-size: xx-large;
+    font-size: 1.5rem;
 }
 
 .infographic-img:hover{

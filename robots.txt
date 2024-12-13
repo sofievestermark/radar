@@ -1,0 +1,3 @@
+user-agent:*
+disallow:
+sitemap: Sitemap: https://radar.sofievestermark.dk/sitemap.xml
