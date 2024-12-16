@@ -17,6 +17,7 @@
 
 <header>
     <!-- Navigaionsbaren -->
+    <!--hjælp til burgermenu: https://www.youtube.com/watch?v=8eFeIFKAKHw&list=WL&index=62 -->
     <a href="../index.html"><img src="../img/logohvid.webp" alt="radar logo" class="logo"></a>
     <nav class="navbar">
         <input type="checkbox" id="sidebar-active">  <!-- selve checkboxen -->
@@ -95,8 +96,9 @@
 
 <main>
     <!-- jeg bruger ikke en h1 da min tyoiske h1 tekst er i min intro/ forside video - derfor skjules denne i css -->
-     
-    <h1>forside Radar, intimt spillested i Aarhus med live musik og events</h1>
+    <h1 class="seo-overskrift">forside Radar, intimt spillested i Aarhus med live musik og events</h1>
+
+
     <!-- top sektion med video -->
     <!-- chat hjælp video: https://chatgpt.com/c/67540d61-78e0-8006-b304-bd62d4ee9ee1 -->
     <video autoplay muted loop>
@@ -104,13 +106,12 @@
       </video>
 
       <!-- kommende events sektion -->
-     <article>
+<section class="kommende-events-sektion">
             <h2>kommende events</h2>
-        </article>
+       
     <section class="billede-sektion">
-    
         <article class="sektion"> 
-            <a href="#">
+            <a href="img/billet-side.webp">
                 <figure class="billede-container">
                     <img class="billeder" src="../img/event1.webp" alt="installationskunst, vandmand af draperet stof">
                     <h3 class="overlay-tekst">04.01</h3>
@@ -183,24 +184,24 @@
         </article>
     </section>
 
+
     <!-- Se alle events knap -->
     <figure class="cta">
-        <figure class="cta">
-            <a href="infographic.html" class="button">SE ALLE EVENTS</a>
-        </figure>
+            <a href="undersider/events.html" class="button">SE ALLE EVENTS</a>
     </figure>
 
+</section>
  <!-- billed video -->
     <section class="video-sektion">
         <h2>mærk magien</h2>
         <video class="billede-video" autoplay muted loop>
             <source src="video/collage.webm" type="video/webm">
           </video>
-          <figure class="cta">
-            <a href="infographic.html" class="button">SE HVORDAN DU KAN <br>STØTTE RADAR</a>
-        </figure>
-    </section>
-
+         
+</section>
+    <figure class="cta">
+            <a href="undersider/inforgraphic.html" class="button">SE HVORDAN DU KAN <br>STØTTE RADAR</a>
+    </figure>
    <!-- link til artikel -->
     <section>
         <a href="undersider/artikel.html">

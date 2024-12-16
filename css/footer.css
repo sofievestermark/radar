@@ -34,7 +34,7 @@ footer {
     height: 100%;
     line-height: 2.5%;
 }
-/* General Footer Styling */
+/* Generel Styling */
 footer .footer {
     display:flex;
     flex-direction: row;
@@ -58,7 +58,7 @@ footer .footer {
     margin: 0 auto;
 }
 
-/* Contact Info */
+/* kontakt Info */
 .kontakt-info,
 .newsletter,
 .kontakt {
@@ -72,9 +72,10 @@ footer .footer {
 .kontakt p {
     margin: 3%;
     font-size: 80%;
+    text-decoration: none;
 }
 
-/* Newsletter Form */
+/* nyhedsbrev Form */
 .nyhedsbrev h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 80%;
@@ -113,7 +114,7 @@ footer .footer {
     color: black;
 }
 
-/* Social Icons */
+/* ikoner */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -156,7 +157,7 @@ footer .footer {
         height: 100%;
         line-height: 1.5rem;
     }
-    /* General Footer Styling */
+    /* General Styling */
     footer .footer {
         display:flex;
         flex-direction: row;
@@ -179,7 +180,7 @@ footer .footer {
         margin: 0 auto;
     }
     
-    /* Contact Info */
+    /* kontakt Info */
     .kontakt-info,
     .nyhedsbrev,
     .kontakt {
@@ -193,9 +194,10 @@ footer .footer {
     .kontakt p {
         margin: 3%;
         font-size: 80%;
+        text-decoration: none;
     }
     
-    /* Newsletter Form */
+    /* nyhedsbrev Form */
     .nyhedsbrev h3 {
         font-family: 'Montserrat', sans-serif;
         font-size: 80%;
@@ -234,7 +236,7 @@ footer .footer {
         color: black;
     }
     
-    /* Social Icons */
+    /* Some ikoner */
     .social-icons {
         display: flex;
         justify-content: center;
@@ -297,13 +299,6 @@ footer .footer {
         gap: 20px;
     }
   
-    /* .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-    } */
   
     .kontakt-info,
     .nyhedsbrev,
@@ -317,6 +312,7 @@ footer .footer {
     .kontakt p {
         margin: 1%;
         font-size: 14px;
+        text-decoration: none;
     }
 
     .nyhedsbrev{
@@ -420,13 +416,6 @@ footer .footer {
         gap: 20px;
     }
   
-    /* .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-    } */
   
     .kontakt-info,
     .nyhedsbrev,
@@ -441,6 +430,7 @@ footer .footer {
         margin: 3%;
         font-size: 14px;
         text-decoration: none;
+        color: white;
     }
 
     .nyhedsbrev{

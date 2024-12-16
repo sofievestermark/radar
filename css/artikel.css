@@ -12,14 +12,7 @@
     --quinary-color:#1e1e1e;
 }
 
-
-
-
-  
-
-/* webskærm */
-@media only screen and (min-width: 1100px) {
-    /* generelt for body */
+  /* generelt for body */
     body {
         margin-top: 4rem;
         font-family: 'montserrat';
@@ -33,9 +26,14 @@
         height: 100%;
         line-height: 1.5rem;
     }
+ 
+
+/* webskærm */
+@media only screen and (min-width: 1100px) {
+  
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
-        background-image: url("../img/artikelforsøg3.webp"); 
+        background-image: url("../img/artikel.webp"); 
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
@@ -43,8 +41,6 @@
         width: auto;
         height: 50rem; 
         display: flex;
-        /* align-items: center;
-        justify-content: center; */
         position: relative; 
         margin-top: 5%;
     }
@@ -133,7 +129,6 @@
 
 
 /* Styling af knap */
-/* Center the container on the page */
 .cta {
     display: flex;
     justify-content: center;
@@ -171,30 +166,16 @@
 
 /* TABLET */
 @media only screen and (max-width: 1099px) {
-    /* generelt for body */
-    body {
-        margin-top: 4rem;
-        font-family: 'montserrat';
-        text-decoration: none;
-        background-color: var(--quinary-color);
-        color:white;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;  
-        height: 100%;
-        line-height: 1.5rem;
-    }
+ 
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
-        background-image: url("../img/artikelforsøg3.webp"); 
+        background-image: url("../img/artikel.webp"); 
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
         width: auto;
         height: 40rem; 
         display: flex;
-        /* align-items: center;
-        justify-content: center; */
         position: relative; 
         margin-top: 5%;
     }
@@ -282,7 +263,6 @@
 
 
 /* Styling af knap */
-/* Center the container on the page */
 .cta {
     display: flex;
     justify-content: center;
@@ -320,22 +300,10 @@
 
 /* MOBIL */
 @media only screen and (max-width: 600px) {
-    /* generelt for body */
-    body {
-        margin-top: 4rem;
-        font-family: 'montserrat';
-        text-decoration: none;
-        background-color: var(--quinary-color);
-        color:white;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;  
-        height: 100%;
-        line-height: 1.5rem;
-    }
+    
 /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
-        background-image: url("../img/artikelforsøg3.webp"); 
+        background-image: url("../img/artikel.webp"); 
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
@@ -424,10 +392,7 @@
     }
 
 
-
-
 /* Styling af knap */
-/* Center the container on the page */
 .cta {
     display: flex;
     justify-content: center;

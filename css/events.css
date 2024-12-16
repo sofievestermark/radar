@@ -11,13 +11,7 @@
     --quaternary-color:#ff7436;
     --quinary-color:#1e1e1e;
 }
-
-/* WEBSKÆRM */
-@media only screen and (min-width: 1100px) {
-
-
-
-    /* generel body styling */
+  /* generel body styling */
     body {
         margin-top: 4rem;
         font-family: 'montserrat';
@@ -29,7 +23,11 @@
         background-repeat: no-repeat;  
         height: 100%;
         line-height: 1.5rem;
+        overflow-x: hidden; /* Fjern horisontal scroll */
     }
+
+/* WEBSKÆRM */
+@media only screen and (min-width: 1100px) {
 
     /* overskrift og tekst */
     .top {
@@ -85,8 +83,8 @@
         }
     
         .billede-sektion a {
-            text-decoration: none; /* Removes underline */
-            color: white; /* Changes link color */
+            text-decoration: none; 
+            color: white;
         }
         
         .sektion {
@@ -100,16 +98,16 @@
             font-size: 1.5rem;
         }
         .overlay-tekst {
-            position: absolute; /* Position relative to .billede-container */
-            top: 50%; /* Center vertically */
-            left: 50%; /* Center horizontally */
-            transform: translate(-50%, -50%); /* Adjust centering */
-            color: white; /* Text color */
+            position: absolute;
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; 
             font-family: 'impact';
-            font-size: 3rem; /* Adjust size as needed */
+            font-size: 3rem;
             font-weight: bold;
-            z-index: 10; /* Ensure text stays above the image */
-            pointer-events: none; /* Prevent text from interfering with clicks on the link */
+            z-index: 10; 
+            pointer-events: none;
         }
         
       
@@ -136,22 +134,8 @@
 
 /* TABLET */
 @media screen and (max-width: 1099px) {
-   /* generel body styling */
-   body {
-    margin-top: 4rem;
-    font-family: 'montserrat';
-    text-decoration: none;
-    background-color: #1e1e1e;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;  
-    height: 100%;
-    line-height: 1.5rem;
-}
 
 /* overskrift og tekst */
-
 .top {
     display: flex; 
     flex-direction: column; 
@@ -202,8 +186,8 @@
     }
 
     .billede-sektion a {
-        text-decoration: none; /* Removes underline */
-        color: white; /* Changes link color */
+        text-decoration: none;
+        color: white;
     }
     
     .sektion {
@@ -253,23 +237,8 @@
 
 /* MOBIL */
 @media screen and (max-width: 600px){
-       /* generel body styling */
-   body {
-    margin-top: 4rem;
-    font-family: 'montserrat';
-    text-decoration: none;
-    background-color: #1e1e1e;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;  
-    height: 100%;
-    line-height: 1.5rem;
-    overflow-x: hidden;
-}
 
 /* overskrift og tekst */
-
 .top {
     display: flex; 
     flex-direction: column; 
