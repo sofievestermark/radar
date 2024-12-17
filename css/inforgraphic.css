@@ -24,6 +24,7 @@
         background-repeat: no-repeat;  
         height: 100%;
         line-height: 1.5rem;
+        overflow-x: hidden; /* Fjern horisontal scroll */
     }
 
 /* webskærm */

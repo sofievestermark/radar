@@ -25,16 +25,15 @@
         background-repeat: no-repeat;  
         height: 100%;
         line-height: 1.5rem;
+        overflow-x: hidden; /* Fjern horisontal scroll */
     }
  
-    /* webskærm */
-@media only screen and (min-width: 1100px) {
   
     /* styling af "toppen" billede med overskrift og eyebrowtekst */
     .overskrift-sektion{
         background-image: url("../img/event1.webp"); 
         background-size: 50%; 
-        background-position: flex-start; 
+        /* background-position: flex-start;  */
         background-repeat: no-repeat; 
         /* opacity: 80%; */
         width: auto;
@@ -56,6 +55,7 @@
         margin-top: 5%;
     }
 
+
     .overskrift{
         display: flex;
         text-align: left;
@@ -67,7 +67,6 @@
         line-height: 4rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.293);  /* mild skygge for tydeliggørelse */
         color: #3cf9ff;
-    }
     }
 
     .info-card {
@@ -97,24 +96,30 @@
     
     .ticket-button {
         margin-top: 1rem;
-        padding: 0.7rem 1.5rem;
+        padding: 0.9rem 1.5rem;
         background: white;
         color: #1e1e1e;
-        font-weight: bold;
+        font-size: 160%;
         border: none;
         cursor: pointer;
         width: 100%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
+
     tr{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
+
 tr:hover {
     color: #00FFFF;
+    transform: scale(1.05);
    
 }
 
-.ticket-button:hover {
-background-color: #00FFFF;
+.ticket-button:hover { 
+        background-color: #1e1e1e; 
+        color: white;
+        border: 1px solid #3cf9ff; 
 }
 
 

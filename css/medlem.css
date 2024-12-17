@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:white;
+    --secundary-color: #3cf9ff;
+    --tertiary-color:#00ed5a;
+    --quaternary-color:#ff7436;
+    --quinary-color:#1e1e1e;
+}
+
+
+/* generel body styling gælder alle enheder*/
+body {
+    margin-top: 4rem;
+    font-family: 'montserrat';
+    text-decoration: none;
+    background-color:var(--quinary-color);
+    color:white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    height: 100%;
+    line-height: 1.5rem;
+    overflow-x: hidden; /* Fjern horisontal scroll */
+    }
+
+  /* video sektion */
+  video {
+    width: 100%;
+    height:100%;
+}
+
+
+h1 {
+    font-family: 'impact';
+    padding-top: 7%;
+    margin: 5%;
+    font-size: 300%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    color: #3cf9ff;
+}
+
+h2 {
+    font-family: 'impact';
+    font-size: 150%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%; 
+    padding-top: 5%;  
+}
+
+h3{
+    font-family: 'impact';
+    font-size: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%; 
+    padding-bottom: 3%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%; 
+}
+
+.illustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.illustration img {
+    width: 40%; 
+    height: auto;
+}
+
+.illustration p {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    max-width: 60%;
+    margin: 2%;
+}
+
+/* sttling af CTA knap */
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom:1%;
+    padding-top: 1%;
+  }
+  
+  /* Call-to-action knap */
+  .button {
+    font-family: 'impact';
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: white; 
+    text-align: center; 
+    padding: 1rem 2rem; 
+    border: 1px solid white; 
+    background-color: transparent; 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    text-transform: uppercase; 
+    line-height: 1.5; 
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background-color: white; 
+    color: #1e1e1e;
+    border: 1px solid #3cf9ff; 
+    }
