@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* OBS!!! denne side var en jeg hurtogt lavede til allersidst for effektens skyld, så der er ingen media queries */
 :root {
     --primary-color:white;
     --secundary-color: #3cf9ff;

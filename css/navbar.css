@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -124,6 +125,7 @@ header .navbar ul li ul li:hover > ul {
     display: block;
 }
 
+
 /* Gemmer checkboxen */
 #sidebar-active {
     display: none;
@@ -141,6 +143,7 @@ header label {
 .burgermenu{
 display: none;
 }
+
 
 /*styling til tablet*/
 @media screen and (max-width: 1220px){ 
@@ -171,10 +174,6 @@ display: none;
     
     }
     
-  
-    /* .navbar {
-        display: none;
-    } */
     
     nav{
         height: 3.75rem;
@@ -209,7 +208,7 @@ display: none;
         fill: white;
         background-color: transparent;
     }
-    
+
     /* fjerner checkboks (åben) */
     #sidebar-active {
         display: none;
@@ -219,7 +218,6 @@ display: none;
     .open-sidebar-button, .close-sidebar-button {
         display: none; 
     }
-    
     
     /* styling af selve den boks der folder ud, når burgeren klikkes */
         .links-container{
@@ -242,7 +240,6 @@ display: none;
     
            box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25); /* svag skygge på boksen */
            transition: 1s ease-out; /* åbnes smooth */
-    
         }
     
     nav ul li a {
@@ -275,6 +272,8 @@ display: none;
         display: block;
     }
     
+
+
     .navbar-menu li:hover > .dropdown {
         display: block;
         position: relative; /* sørger for at undermenuerne ikke "dropper down" oveni hovedmenuerne */
@@ -282,6 +281,7 @@ display: none;
         padding-left: 0;
         margin-top: 0.3rem;
     }
+}
 
     @media screen and (max-width: 600px){
 
@@ -307,5 +307,4 @@ display: none;
        box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25);
        transition: 1s ease-out;
        }
-}
 }
