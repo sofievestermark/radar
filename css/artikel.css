@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-color:white;
-    --secundary-color: #3cf9ff;
+    --primary-color:#ffff;
+    --secundary-color: #85f8fc;
     --tertiary-color:#00ed5a;
     --quaternary-color:#ff7436;
     --quinary-color:#1e1e1e;
@@ -19,7 +19,7 @@
         font-weight: 100;
         text-decoration: none;
         background-color: var(--quinary-color);
-        color:white;
+        color:var(--primary-color);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;  
@@ -71,7 +71,7 @@
     }
 
     .eyebrow {
-    color: #3cf9ff;
+    color: var(--secundary-color);
     font-family: 'montserrat';
     }
 
@@ -108,7 +108,7 @@
         font-size: 5rem;
         padding-left:1%;
         padding-right: 2%;
-        color: white;
+        color: var(--primary-color);
         
     }
 
@@ -118,14 +118,14 @@
         font-size: 5rem;
         padding-left:1%;
         padding-right: 2%;
-        color: white;
+        color: var(--primary-color);
     }
 
     .citat:hover .anførelses-tegn {
-        color: #3cf9ff;
+        color: var(--secundary-color);
     }
     .citat:hover span {
-        color: #3cf9ff;
+        color: var(--secundary-color);
     }
 
 
@@ -142,10 +142,10 @@
   .button {
     font-family: 'impact';
     font-size: 150%; 
-    color: white; 
+    color: var(--primary-color); 
     text-align: center; 
     padding: 1.5% 2%; 
-    border: 1px solid white;
+    border: 1px solid var(--primary-color);
     background-color: transparent; 
     cursor: pointer; 
     transition: all 0.3s ease; 
@@ -157,9 +157,9 @@
   
   /* Hover effect */
   .button:hover {
-    border: 2px solid #3cf9ff;
-    background-color: white;
-    color: #1e1e1e;
+    border: 2px solid var(--secundary-color);
+    background-color: var(--primary-color);
+    color: var(--quinary-color);
 
   }
   
@@ -205,7 +205,7 @@
     }
 
     .eyebrow {
-    color: #3cf9ff;
+    color: var(--secundary-color);
     font-family: 'montserrat';
     }
 
@@ -242,7 +242,7 @@
         font-size: 5rem;
         padding-left:1%;
         padding-right: 2%;
-        color: white;
+        color: var(--primary-color);
         
     }
 
@@ -252,14 +252,14 @@
         font-size: 5rem;
         padding-left:1%;
         padding-right: 2%;
-        color: white;
+        color: var(--primary-color);
     }
 
     .citat:hover .anførelses-tegn {
-        color: #3cf9ff;
+        color: var(--secundary-color);
     }
     .citat:hover span {
-        color: #3cf9ff;
+        color: var(--secundary-color);
     }
 
 
@@ -276,10 +276,10 @@
   .button {
     font-family: 'impact';
     font-size: 150%; 
-    color: white; 
+    color: var(--primary-color); 
     text-align: center; 
     padding: 1.5% 2%; 
-    border: 1px solid white;
+    border: 1px solid var(--primary-color);
     background-color: transparent; 
     cursor: pointer; 
     transition: all 0.3s ease; 
@@ -291,9 +291,9 @@
   
   /* button hover */
   .button:hover {
-    border: 2px solid #3cf9ff;
-    background-color: white;
-    color: #1e1e1e;
+    border: 2px solid var(--secundary-color);
+    background-color: var(--primary-color);
+    color: var(--quinary-color);
 
   }
   
@@ -341,7 +341,7 @@
     }
 
     .eyebrow {
-    color: #3cf9ff;
+    color: var(--secundary-color);
     font-family: 'montserrat';
     font-size: 0.6rem;
     }
@@ -379,7 +379,7 @@
         font-size: 5rem;
         padding-left:1%;
         padding-right: 2%;
-        color: #3cf9ff; /* ingen hover på mobil */
+        color: var(--secundary-color); /* ingen hover på mobil */
         
     }
 
@@ -389,7 +389,7 @@
         font-size: 5rem;
         padding-left:1%;
         padding-right: 2%;
-        color: #3cf9ff; /* ingen hover på mobil */
+        color: var(--secundary-color); /* ingen hover på mobil */
     }
 
 
@@ -406,10 +406,10 @@
   .button {
     font-family: 'impact';
     font-size: 115%; 
-    color: white; 
+    color: var(--primary-color); 
     text-align: center; 
     padding: 1.5% 2%; 
-    border: 1px solid white;
+    border: 1px solid var(--primary-color);
     background-color: transparent; 
     cursor: pointer; 
     transition: all 0.3s ease; 
@@ -421,7 +421,7 @@
   
   /* Hover effect */
   .button:hover {
-    border: 1px solid #3cf9ff;
+    border: 1px solid var(--secundary-color);
 
   }
 }

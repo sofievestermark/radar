@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-color:white;
-    --secundary-color: #3cf9ff;
+    --primary-color:#ffff;
+    --secundary-color: #85f8fc;
     --tertiary-color:#00ed5a;
     --quaternary-color:#ff7436;
     --quinary-color:#1e1e1e;
@@ -18,7 +18,7 @@
         font-family: 'montserrat';
         text-decoration: none;
         background-color: var(--quinary-color);
-        color:white;
+        color:var(--primary-color);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;  
@@ -70,7 +70,7 @@
     }
 
     .eyebrow {
-    color: #7afdff;
+    color: var(--secundary-color);
     font-family:'montserrat';
     }
 
@@ -121,7 +121,7 @@
 }
 
 .graphic-overskrift {
-    color: white;
+    color: var(--primary-color);
     padding-bottom: 5%;
     text-transform: uppercase;
     font-size: xx-large;
@@ -132,7 +132,7 @@
 }
 
 .graphic-overskrift:hover{
-    color: #7afdff;
+    color: var(--secundary-color);
 }
 
 }
@@ -180,7 +180,7 @@
 }
 
 .eyebrow {
-color: #3cf9ff;
+color: var(--secundary-color);
 font-family:'montserrat';
 }
 
@@ -231,7 +231,7 @@ width: 90%;
 }
 
 .graphic-overskrift {
-color: white;
+color: var(--primary-color);
 padding-bottom: 5%;
 text-transform: uppercase;
 font-size: xx-large;
@@ -242,7 +242,7 @@ line-height: normal;
 transform: scale(1.05);
 }
 .graphic-overskrift:hover{
-color: #3cf9ff;
+color: var(--secundary-color);
 }
 }
 
@@ -289,7 +289,7 @@ color: #3cf9ff;
     }
 
     .eyebrow {
-    color:#3cf9ff;
+    color:var(--secundary-color);
     font-family:'montserrat';
     }
 
@@ -341,7 +341,7 @@ color: #3cf9ff;
 }
 
 .graphic-overskrift {
-    color: white;
+    color: var(--primary-color);
     padding-bottom: 5%;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -351,6 +351,6 @@ color: #3cf9ff;
     transform: scale(1.05);
 }
 .graphic-overskrift:hover{
-    color: #3cf9ff;
+    color: var(--secundary-color);
 }
 }

@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-color:white;
-    --secundary-color: #3cf9ff;
+    --primary-color:#ffff;
+    --secundary-color: #85f8fc;
     --tertiary-color:#00ed5a;
     --quaternary-color:#ff7436;
     --quinary-color:#1e1e1e;
@@ -19,7 +19,7 @@ body {
     font-family: 'montserrat';
     text-decoration: none;
     background-color:var(--quinary-color);
-    color:white;
+    color:var(--secundary-color);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  
@@ -53,6 +53,7 @@ body {
         text-transform: uppercase;
         display: flex;
         justify-content: center;
+        color:var(--primary-color);
     }
 
     .billede-container {
@@ -79,7 +80,7 @@ body {
 
     .billede-sektion a {
         text-decoration: none; /* fjerer lilla linje */
-        color: white; 
+        color: var(--primary-color); 
     }
     
     .sektion {
@@ -97,7 +98,7 @@ body {
         top: 50%; 
         left: 50%; 
         transform: translate(-50%, -50%); 
-        color: white;
+        color: var(--primary-color);
         font-family: 'impact';
         font-size: 3rem; 
         font-weight: bold;
@@ -114,7 +115,7 @@ body {
 /* jeg ville egentlig have at dato skulle ændre sig til "book billet" - pseudoklassen after indsætter "book billet" efter  */
     .billede-container:hover .overlay-tekst::after {
         content: " Book billet"; /* ændrer teksten */
-        color: #3cf9ff;
+        color: var(--secundary-color);
     }
 
     /* pris tekst bliver fed/impact ved hover */
@@ -123,7 +124,7 @@ body {
     }
     
     .billeder:hover{
-        border: 1px solid white;
+        border: 1px solid var(--primary-color)
     }
 
 
@@ -142,7 +143,7 @@ body {
         font-family: 'impact';
         font-size: 1.5rem; 
         font-weight: bold; 
-        color: white; 
+        color: var(--primary-color); 
         text-align: center; 
         padding: 1rem 2rem; 
         border: 1px solid white; 
@@ -155,9 +156,9 @@ body {
       }
     
       .button:hover {
-        background-color: white; 
-        color: #1e1e1e;
-        border: 1px solid #3cf9ff; 
+        background-color: var(--primary-color); 
+        color: var(--quinary-color);
+        border: 1px solid var(--secundary-color); 
         }
 
 
@@ -207,7 +208,7 @@ body {
     }
 
     .artikel:hover {
-       color: #3cf9ff;
+       color: var(--secundary-color);
        transform: scale(1.05);
     }
     
@@ -234,9 +235,10 @@ body {
         font-family: 'montserrat';
         font-size: 150%;
         font-weight: 100;
+        color: var(--primary-color);
     }
     .del:hover{
-        border: 1px dashed #3cf9ff; 
+        border: 1px dashed var(--secundary-color); 
         transform: scale(1.05);
     }
     
@@ -290,7 +292,7 @@ h2{
 
 .billede-sektion a {
     text-decoration: none;
-    color: white; 
+    color: var(--primary-color); 
 }
 
 .sektion {
@@ -307,7 +309,7 @@ h4 {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    color: white; 
+    color: var(--primary-color); 
     font-family: 'impact';
     font-size: 3rem; 
     font-weight: bold;
@@ -319,7 +321,7 @@ h4 {
 
 .billede-container:hover .overlay-tekst::after {
     content: " Book billet"; /* tilføjer tekst (after) */
-    color: #3cf9ff;
+    color: var(--secundary-color);
 }
 
 .billede-container:hover ~ .pris {
@@ -327,7 +329,7 @@ h4 {
 }
 
 .billeder:hover{
-    border: 1px solid white;
+    border: 1px solid var(--primary-color);
 }
 
 
@@ -345,10 +347,10 @@ h4 {
     font-family: 'impact';
     font-size: 1.5rem; 
     font-weight: bold; 
-    color: white; 
+    color: var(--primary-color); 
     text-align: center; 
     padding: 1rem 2rem; 
-    border: 2px solid white; 
+    border: 2px solid var(--primary-color); 
     background-color: transparent; 
     cursor: pointer;
     transition: all 0.3s ease; 
@@ -359,9 +361,9 @@ h4 {
   
   /* Hover effect */
   .button:hover {
-    background-color: white; 
-    color: #1e1e1e;
-    border: 1px solid #3cf9ff; 
+    background-color: var(--primary-color); 
+    color: var(--quinary-color);
+    border: 1px solid var(--secundary-color); 
     }
 
 
@@ -396,7 +398,7 @@ h2.artikel {
     justify-content: center;
     position: relative; 
     margin-top: 5%;
-    color: white;
+    color: var(--primary-color);
 
     text-align: center;
     font-family: 'Impact', sans-serif; 
@@ -412,14 +414,14 @@ section a {
 }
 
 .artikel:hover {
-   color: #3cf9ff;
+   color: var(--secundary-color);
    transform: scale(1.05);
 }
 
 .del {
     width: 60%; 
     padding: 1.25rem; 
-    border: 1px dashed white; 
+    border: 1px dashed var(--primary-color); 
      margin: 0 auto; 
     text-align: center; 
     box-sizing: border-box; 
@@ -440,7 +442,7 @@ section a {
     font-weight: 100;
 }
 .del:hover{
-    border: 1px dashed #3cf9ff; 
+    border: 1px dashed var(--secundary-color); 
     transform: scale(1.05);
 }
 }
@@ -492,7 +494,7 @@ h2{
 
 .billede-sektion a {
     text-decoration: none; 
-    color: white;
+    color: var(--primary-color);
 }
 
 .sektion {
@@ -509,7 +511,7 @@ h4 {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    color: white; 
+    color: var(--primary-color); 
     font-family: 'impact';
     font-size: 3rem; 
     font-weight: bold;
@@ -521,7 +523,7 @@ h4 {
 
 .billede-container:hover .overlay-tekst::after {
     content: " Book billet"; 
-    color: #3cf9ff;
+    color: var(--secundary-color);
 }
 
 .billede-container:hover ~ .pris {
@@ -529,7 +531,7 @@ h4 {
 }
 
 .billeder:hover{
-    border: 1px solid white;
+    border: 1px solid var(--primary-color);
 }
 
 .cta {
@@ -546,10 +548,10 @@ h4 {
     font-family: 'impact';
     font-size: 1.5rem; 
     font-weight: bold; 
-    color: white; 
+    color: var(--primary-color); 
     text-align: center; 
     padding: 1rem 2rem; 
-    border: 2px solid white; 
+    border: 2px solid var(--primary-color); 
     background-color: transparent; 
     cursor: pointer;
     transition: all 0.3s ease; 
@@ -560,9 +562,9 @@ h4 {
   
   /* Hover effect */
   .button:hover {
-    background-color: white; 
-    color: #1e1e1e;
-    border: 1px solid #3cf9ff; 
+    background-color: var(--primary-color); 
+    color: var(--quinary-color);
+    border: 1px solid var(--secundary-color); 
     }
 
   .video-sektion {
@@ -595,7 +597,7 @@ h2.artikel {
     justify-content: center; 
     position: relative; 
     margin-top: 5%;
-    color: white;
+    color: var(--primary-color);
 
     text-align: center;
     font-family: 'Impact', sans-serif; 
@@ -611,14 +613,14 @@ section a {
 }
 
 .artikel:hover {
-   color: #3cf9ff;
+   color: var(--secundary-color);
    transform: scale(1.05);
 }
 
 .del {
     width: 80%; 
     padding: 1rem; 
-    border: 1px dashed white; 
+    border: 1px dashed var(--primary-color); 
      margin: 0 auto; 
     text-align: center; 
     box-sizing: border-box; 
@@ -638,7 +640,7 @@ section a {
     font-weight: 100;
 }
 .del:hover{
-    border: 1px dashed #3cf9ff; 
+    border: 1px dashed var(--secundary-color); 
     transform: scale(1.05);
 }
 }
@@ -691,7 +693,7 @@ h2{
 
 .billede-sektion a {
     text-decoration: none; 
-    color: white; 
+    color: var(--primary-color); 
 }
 
 .sektion {
@@ -708,7 +710,7 @@ h4 {
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%); 
-    color: white; 
+    color: var(--primary-color); 
     font-family: 'impact';
     font-size: 3rem; 
     font-weight: bold;
@@ -720,7 +722,7 @@ h4 {
 
 .billede-container:hover .overlay-tekst::after {
     content: " Book billet"; /* indsætter nyt content */
-    color: #3cf9ff;
+    color: var(--secundary-color);
 }
 
 .billede-container:hover ~ .pris {
@@ -728,7 +730,7 @@ h4 {
 }
 
 .billeder:hover{
-    border: 1px solid white;
+    border: 1px solid var(--primary-color);
 }
 
 .cta {
@@ -745,10 +747,10 @@ h4 {
     font-family: 'impact';
     font-size: 1rem; 
     font-weight: bold; 
-    color: white; 
+    color: var(--primary-color); 
     text-align: center; 
     padding: 1rem 2rem; 
-    border: 1px solid white; 
+    border: 1px solid var(); 
     background-color: transparent; 
     cursor: pointer;
     transition: all 0.3s ease; 
@@ -760,9 +762,9 @@ h4 {
   
   /* Hover effect */
   .button:hover {
-    background-color: white; 
-    color: #1e1e1e;
-    border: 1px solid #3cf9ff; 
+    background-color: var(--primary-color); 
+    color: var(--quinary-color);
+    border: 1px solid var(--secundary-color); 
     }
 
   .video-sektion {
@@ -794,7 +796,7 @@ h2.artikel {
     justify-content: center; 
     position: relative; 
     margin-top: 5%;
-    color: white;
+    color: var(--primary-color);
 
     text-align: center;
     font-family: 'Impact', sans-serif;
@@ -810,14 +812,14 @@ section a {
 }
 
 .artikel:hover {
-   color: #3cf9ff;
+   color: var(--secundary-color);
    transform: scale(1.05);
 }
 
 .del {
     width: 90%; 
     padding: 0.75rem; 
-    border: 1px dashed white; 
+    border: 1px dashed var(--primary-color); 
      margin: 0 auto; 
     text-align: center; 
     box-sizing: border-box; 
@@ -836,7 +838,7 @@ section a {
     font-weight: 100;
 }
 .del:hover{
-    border: 2px dashed #3cf9ff; 
+    border: 2px dashed var(--secundary-color); 
     transform: scale(1.05);
 }
 }

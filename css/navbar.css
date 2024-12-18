@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color:white;
-    --secundary-color: #3cf9ff;
+    --primary-color:#ffff;
+    --secundary-color: #85f8fc;
     --tertiary-color:#00ed5a;
     --quaternary-color:#ff7436;
     --quinary-color:#1e1e1e;
@@ -17,10 +17,11 @@ body {
     text-decoration: none;
     background-position: center;
     /* text-align: center; */
-    background-color: #1e1e1e;
+    background-color: var(--quinary-color);
     min-width: 100vw;
     line-height: 2rem;
 }
+
 
 
 /* header styling */
@@ -78,8 +79,8 @@ header .navbar ul li a {
 
 /* hoved menupunkt hover */
 header .navbar ul li a:hover {
-    background: white;
-    color: #1e1e1e;
+    background: var(--primary-color);
+    color: var(--quinary-color);
 }
 
 /* undermenu niveau et */
@@ -88,7 +89,7 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 12rem;
-    background: #1e1e1e; 
+    background: var(--quinary-color); 
     display: none;
     padding: 0;
 }
@@ -113,8 +114,8 @@ header .navbar ul li ul li a {
 
 /* undermenu hover effekt */
 header .navbar ul li ul li a:hover {
-    background: #1e1e1e;
-    color: #3cf9ff;
+    background: var(--quinary-color);
+    color: var(--secundary-color);
 }
 
 
@@ -134,7 +135,7 @@ header .navbar ul li ul li:hover > ul {
 
 header label {
     font-size: 1.25rem;
-    color: #333;
+    color: var(--quinary-color);
     cursor: pointer;
     display: none;
 }
@@ -146,7 +147,7 @@ display: none;
 
 
 /*styling til tablet*/
-@media screen and (max-width: 1220px){ 
+@media screen and (max-width: 1263px){ 
 
     header {
         position: fixed;
@@ -170,7 +171,7 @@ display: none;
     
     .logo{
         width: 15vw;
-        padding-top: 30%;
+        padding-top:5%;
     
     }
     
@@ -191,7 +192,7 @@ display: none;
         display: flex;
         align-items: flex-start;
         text-decoration: none;
-        color: black;
+        color: var(--quinary-color);
     }
     
 
@@ -199,13 +200,13 @@ display: none;
     /* styling af ikoner ikoner */
     /* de tre streger */
     .streger {
-        fill: white;
+        fill: var(--primary-color);
         background-color: transparent;
     }
     
     /* krydset */
     nav svg .kryds {
-        fill: white;
+        fill: var(--primary-color);
         background-color: transparent;
     }
 
@@ -226,7 +227,7 @@ display: none;
             display: flex;
             flex-direction: column;
             align-items:flex-start;
-            background-color:#1e1e1e;
+            background-color:var(--quinary-color);
     
            flex-direction: column; /* opsætning over hinanden */
            align-items: flex-start; /* placering i venstre side */
@@ -236,7 +237,7 @@ display: none;
            right: -100%; /* den grå boks er skjult til de tre streger klikkes af */
            z-index: 10;
            width: 18.75rem;
-           color: black;
+           color: var(--quinary-color);
     
            box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25); /* svag skygge på boksen */
            transition: 1s ease-out; /* åbnes smooth */
@@ -292,7 +293,7 @@ display: none;
         display: flex;
         flex-direction: column;
         align-items:flex-start;
-        background-color:#1e1e1e;
+        background-color:var(--quinary-color);
 
        flex-direction: column;
        align-items: flex-start;
@@ -302,7 +303,7 @@ display: none;
        right: -100%; 
        z-index: 10;
        width: 18.75rem;
-       color: black;
+       color: var(--quinary-color);
 
        box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25);
        transition: 1s ease-out;
